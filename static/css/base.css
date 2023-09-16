@@ -118,3 +118,17 @@ body {
           height: calc(100vh - 116px);
       }
   }
+
+  /* reduce icon sizes for mobile-top-nav on xs small screen sizes */
+  @media (max-width: 440px) {
+    #mobile-topnav-items {
+        font-size: 0.8em;
+    }
+  }
+
+  /* reduce icon sizes for mobile-top-nav on xs small screen sizes */
+  @media (max-width: 418px) {
+    #mobile-topnav-items {
+        padding-left: 0;
+    }
+  }
