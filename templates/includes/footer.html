@@ -1,0 +1,74 @@
+<footer class="footer mt-auto py-3 bg-dark">
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-12">
+                <div class="col-12 mx-0 py-1 py-lg-0 text-center">
+                    <a href="{% url 'home' %}" class="nav-link text-center">
+                        <h3 class="logo-font text-white my-0"><strong>Infinite</strong> Realms</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 text-center">
+                <h5 class="text-white">ABOUT</h5>
+                <p class="text-white">
+                    Welcome to Infintie Realms, where passion for anime meets a world of endless
+                    imagination. With a curated collection spanning genres and universes, we're dedicated to bringing
+                    you the finest in sequential art and storytelling. Whether you're a seasoned collector or just
+                    beginning your journey, our store is a haven for every comic enthusiast. Explore, discover, and
+                    embark on adventures that transcend the pages. Join us in celebrating the art form that has captured
+                    hearts for generations. Your next epic adventure awaits!
+                </p>
+            </div>
+            <div class="col-12 col-md-6 text-center">
+                <h5 class="text-white">FOLLOW US<h5>
+                        <div class="col p-0 mb-1">
+                            <a href="https://www.facebook.com/profile.php?id=100088558250954"
+                                class="text-decoration-none" target="_blank" rel="noopener"
+                                aria-label="Follow us on Facebook">
+                                <i class="fab fa-facebook-square text-white" aria-hidden="true">
+                                    <span class="text-white pl-2">Facebook</span>
+                                </i>
+                            </a>
+                        </div>
+                        <div class="col p-0 mb-1">
+                            <a href="https://www.instagram.com/" class="text-decoration-none" target="_blank"
+                                rel="noopener" aria-label="Follow us on Instagram">
+                                <i class="fab fa-instagram text-white" aria-hidden="true">
+                                    <span class="text-white pl-2">Instagram</span>
+                                </i>
+                            </a>
+                        </div>
+                        <div class="col p-0 mb-1">
+                            <a href="https://twitter.com/?lang=en" class="text-decoration-none" target="_blank"
+                                rel="noopener" aria-label="Follow us on Twitter">
+                                <i class="fab fa-twitter text-white" aria-hidden="true">
+                                    <span class="text-white pl-2">Twitter</span>
+                                </i>
+                            </a>
+                        </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col-12 text-center">
+                <p class="text-white">
+                    This website is currently operating in Test Mode for Stripe Payments. Any transactions conducted on
+                    this platform are solely for testing purposes and do not involve actual financial transactions. No
+                    real payments will be processed, and no actual charges will be incurred.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+{% block postloadjs %}
+<script>
+    const currentYear = document.querySelector("#current-year");
+    currentYear.innerText = new Date().getFullYear();
+</script>
+{% endblock %}
