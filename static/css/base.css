@@ -12,6 +12,16 @@ body {
         font-family: 'Ubuntu';
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -82,6 +92,24 @@ body {
 
 .mask-bg {
     background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Products page */
+
+.card-img-top {
+    width: 100%;
+    height: 30vw;
+    object-fit: contain;
+}
+
+.product-card {
+  transition: .2s;
+  transition: box-shadow .2s;
+}
+
+.product-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 11px rgba(33,33,33,.2);;
 }
 
 /* -------------------------------- Media Queries */
