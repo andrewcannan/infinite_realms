@@ -12,7 +12,7 @@ class ProductAdmin(admin.ModelAdmin):
         'price',
         'image',
     )
-    ordering = ('category',)
+    ordering = ('sku',)
 
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -26,6 +26,7 @@ class SubCategoryAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
         'name',
+        'category',
     )
 
 
