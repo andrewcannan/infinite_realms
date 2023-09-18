@@ -12,7 +12,8 @@ def all_products(request):
     products = Product.objects.all()
     query = None
     categories = None
-    sub_categories = None
+    current_sub_categories = None
+    all_sub_categories = None
     sort = None
     direction = None
 
@@ -34,14 +35,20 @@ def all_products(request):
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
+            all_sub_categories = Sub_category.objects.filter(
+                category__in=categories)
 
-        if 'sub_category' in request.GET:
+        if 'category' and 'sub_category' in request.GET:
+            categories = request.GET['category'].split(',')
             sub_categories = request.GET['sub_category'].split(',')
             products = products.filter(sub_category__name__in=sub_categories)
-            sub_categories = Sub_category.objects.filter(
+            categories = Category.objects.filter(name__in=categories)
+            current_sub_categories = Sub_category.objects.filter(
                 name__in=sub_categories)
+            all_sub_categories = Sub_category.objects.filter(
+                category__in=categories)
 
-    # if request.GET:
+    if request.GET:
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -59,7 +66,8 @@ def all_products(request):
         'products': products,
         'search_term': query,
         'current_categories': categories,
-        'current_sub_categories': sub_categories,
+        'current_sub_categories': current_sub_categories,
+        'all_sub_categories': all_sub_categories,
         'current_sorting': current_sorting,
     }
 
