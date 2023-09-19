@@ -18,87 +18,161 @@
         <div class="col text-center mt-3">
             {% if current_categories %}</h2>
                 {% for c in current_categories %}
-                    <h2 class="logo-font mb-3 font-weight-bold">{{ c.friendly_name }}</h2>
+                <h2 class="logo-font mb-3 font-weight-bold">{{ c.friendly_name }}</h2>
                 {% endfor %}
             {% else %}
                 <h2 class="logo-font font-weight-bold">All Products</h2>
             {% endif %}
+
             {% for cat in current_categories %}
-            {% for c in all_sub_categories %}
-                {% if c in current_sub_categories %}
-                <a class="text-decoration-none mr-1" href="{% url 'products' %}?category={{ cat.name }}&sub_category={{ c.name }}">
-                    <span class="p-2 badge badge-white btn-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
-                </a>
-                {% else %}
-                <a class="text-decoration-none mr-1"href="{% url 'products' %}?category={{ cat.name }}&sub_category={{ c.name }}">
-                    <span class="p-2 badge badge-white btn-outline-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
-                </a>
-                {% endif %}
-            {% endfor %}
+                {% for c in all_sub_categories %}
+                    {% if c in current_sub_categories %}
+                        <a class="text-decoration-none mr-1"
+                            href="{% url 'products' %}?category={{ cat.name }}&sub_category={{ c.name }}">
+                            <span class="p-2 badge badge-white btn-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+                        </a>
+                    {% else %}
+                        <a class="text-decoration-none mr-1"
+                            href="{% url 'products' %}?category={{ cat.name }}&sub_category={{ c.name }}">
+                            <span
+                                class="p-2 badge badge-white btn-outline-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+                        </a>
+                    {% endif %}
+                {% endfor %}
             {% endfor %}
             <hr class="w-50 mb-4">
         </div>
     </div>
-
     <div class="row">
-        {% for product in products %}
-        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-5">
-            <div class="card h-100 border-0 product-card">
-                <a href="{% url 'product_detail' product.id %}">
-                    <img class="card-img-top img-fluid" src="{{ product.image.url}}" alt="{{ product.name }}">
-                </a>
-                <div class="card-body pb-0">
-                    <p class="mb-0">{{ product.name }}</p>
+        <div class="product-container col-10 offset-1">
+            <div class="row mt-1 mb-2">
+                <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                    <div class="sort-select-wrapper w-50">
+                        <select id="sort-selector"
+                            class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None-None' %}info{% else %}black{% endif %}">
+                            <option value="reset" {% if current_sorting == 'None-None' %}selected{% endif %}>Sort by...
+                            </option>
+                            <option value="price-asc" {% if current_sorting == 'price-asc' %}selected{% endif %}>Price
+                                (low to high)</option>
+                            <option value="price-desc" {% if current_sorting == 'price-desc' %}selected{% endif %}>Price
+                                (high to low)</option>
+                            <option value="name-asc" {% if current_sorting == 'name-asc' %}selected{% endif %}>Name
+                                (A-Z)</option>
+                            <option value="name-desc" {% if current_sorting == 'name-desc' %}selected{% endif %}>Name
+                                (Z-A)</option>
+                            <option value="manufacturer-asc" {% if current_sorting == 'manufacturer-asc' %}selected{% endif %}>
+                                Manufacturer
+                                (A-Z)</option>
+                            <option value="manufacturer-desc"
+                                {% if current_sorting == 'manufacturer-desc' %}selected{% endif %}>Manufacturer
+                                (Z-A)</option>
+                            <option value="category-asc" {% if current_sorting == 'category-asc' %}selected{% endif %}>
+                                Category (A-Z)</option>
+                            <option value="category-desc"
+                                {% if current_sorting == 'category-desc' %}selected{% endif %}>Category (Z-A)</option>
+                            <option value="sub_category-asc" {% if current_sorting == 'sub_category-asc' %}selected{% endif %}>
+                                Sub Category (A-Z)</option>
+                            <option value="sub_category-desc"
+                                {% if current_sorting == 'sub_category-desc' %}selected{% endif %}>Sub Category (Z-A)</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="card-footer bg-white pt-0 border-0 text-left">
-                    <div class="row">
-                        <div class="col">
-                            <p class="lead mb-0 text-left small">From: {{ product.manufacturer }}</p>
-                            <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
-                            {% if product.category %}
-                            <p class="small mt-1 mb-0">
-                                <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                                    <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
-                                </a>
-                            </p>
-                            {% endif %}
-                            {% if product.sub_category %}
-                            <p class="small mt-1 mb-0">
-                                <a class="text-muted"
-                                    href="{% url 'products' %}?sub_category={{ product.sub_category.name }}">
-                                    <i class="fas fa-tag mr-1"></i>{{ product.sub_category.friendly_name }}
-                                </a>
-                            </p>
-                            {% endif %}
+                <div class="col-12 col-md-6 order-md-first">
+                    <p class="text-muted mt-3 text-center text-md-left">
+                        {% if search_term or current_categories or current_sorting != 'None-None' %}
+                            <span class="small"><a class="text-black" href="{% url 'products' %}">Products Home</a> | </span>
+                        {% endif %}
+                        {{ products|length }} Products{% if search_term %} found for
+                        <strong>"{{ search_term }}"</strong>{% endif %}
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                {% for product in products %}
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-5">
+                    <div class="card h-100 border-0 product-card">
+                        <a href="{% url 'product_detail' product.id %}">
+                            <img class="card-img-top img-fluid" src="{{ product.image.url}}" alt="{{ product.name }}">
+                        </a>
+                        <div class="card-body pb-0">
+                            <p class="mb-0">{{ product.name }}</p>
+                        </div>
+                        <div class="card-footer bg-white pt-0 border-0 text-left">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="lead mb-0 text-left small">From: {{ product.manufacturer }}</p>
+                                    <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
+                                    {% if product.category %}
+                                    <p class="small mt-1 mb-0">
+                                        <a class="text-muted"
+                                            href="{% url 'products' %}?category={{ product.category.name }}">
+                                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                        </a>
+                                    </p>
+                                    {% endif %}
+                                    {% if product.sub_category %}
+                                    <p class="small mt-1 mb-0">
+                                        <a class="text-muted"
+                                            href="{% url 'products' %}?sub_category={{ product.sub_category.name }}">
+                                            <i class="fas fa-tag mr-1"></i>{{ product.sub_category.friendly_name }}
+                                        </a>
+                                    </p>
+                                    {% endif %}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                {% if forloop.counter|divisibleby:1 %}
+                <div class="col-12 d-sm-none mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:2 %}
+                <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:3 %}
+                <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:4 %}
+                <div class="col-12 d-none d-xl-block mb-5">
+                    <hr>
+                </div>
+                {% endif %}
+                {% endfor %}
             </div>
         </div>
-        {% if forloop.counter|divisibleby:1 %}
-        <div class="col-12 d-sm-none mb-5">
-            <hr>
-        </div>
-        {% endif %}
-        {% if forloop.counter|divisibleby:2 %}
-        <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-            <hr>
-        </div>
-        {% endif %}
-        {% if forloop.counter|divisibleby:3 %}
-        <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-            <hr>
-        </div>
-        {% endif %}
-        {% if forloop.counter|divisibleby:4 %}
-        <div class="col-12 d-none d-xl-block mb-5">
-            <hr>
-        </div>
-        {% endif %}
-        {% endfor %}
     </div>
 </div>
-</div>
-</div>
+{% endblock %}
 
+{% block postloadjs %}
+{{ block.super }}
+    <script type="text/javascript">
+        $('#sort-selector').change(function() {
+            let selector = $(this);
+            let currentUrl = new URL(window.location);
+
+            let selectedVal = selector.val();
+            if(selectedVal != 'reset') {
+                let sort = selectedVal.split('-')[0];
+                let direction = selectedVal.split('-')[1];
+
+                currentUrl.searchParams.set('sort', sort);
+                currentUrl.searchParams.set('direction', direction);
+
+                window.location.replace(currentUrl);
+            }
+            else {
+                currentUrl.searchParams.delete('sort');
+                currentUrl.searchParams.delete('direction');
+
+                window.location.replace(currentUrl);
+            }
+        })
+    </script>
 {% endblock %}
