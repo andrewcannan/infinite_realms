@@ -75,18 +75,32 @@ body {
     color: black;
 }
 
-.text-black {
-    color: #000 !important;
-}
-
 .border-black {
     border: 1px solid black !important;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
 }
 
 /* General Text Rules */
 
 .logo-font {
     text-transform: uppercase;
+}
+
+.text-black {
+    color: #000 !important;
 }
 
 /* HomePage */
