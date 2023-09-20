@@ -37,7 +37,7 @@ def add_to_bag(request, item_id):
     return redirect(redirect_url)
 
 
-def adjust_bag(request, item_id):
+def update_bag(request, item_id):
     """
     Adjust the quantity of the specified product to the specified amount
     """
