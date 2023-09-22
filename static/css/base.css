@@ -136,6 +136,22 @@ main {
     box-shadow: 0 0 11px rgba(33,33,33,.2);;
 }
 
+/* Toasts */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
 
 /* -------------------------------- Media Queries */
 
