@@ -3,6 +3,7 @@ from django.contrib import messages
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 
+
 def checkout(request):
     bag = request.session.get('bag', {})
     if not bag:
