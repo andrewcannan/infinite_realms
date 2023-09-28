@@ -17,6 +17,8 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """
     Add a quantity of the specified product to the shopping bag
+    - Params:
+        int: item_id
     """
 
     product = get_object_or_404(Product, pk=item_id)
@@ -40,6 +42,8 @@ def add_to_bag(request, item_id):
 def update_bag(request, item_id):
     """
     Adjust the quantity of the specified product to the specified amount
+    - Params:
+        int: item_id
     """
 
     product = get_object_or_404(Product, pk=item_id)
@@ -64,6 +68,8 @@ def update_bag(request, item_id):
 def remove_from_bag(request, item_id):
     """
     Remove the item from the shopping bag
+    - Params:
+        int: item_id
     """
 
     try:
