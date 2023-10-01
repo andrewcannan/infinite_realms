@@ -1,0 +1,41 @@
+Dear {{ order.full_name }},
+
+We are thrilled to confirm your recent purchase from Infinite Realms! Your support means the world to us, and we're excited to have you as part of our community of comic book and anime enthusiasts.
+
+Here are the details of your order:
+
+Order Number: {{ order.order_number }}
+Date of Purchase: {{ order.date }}
+Shipping Address: 
+
+{{ order.street_address1 }}
+{% if order.street_address2 %}
+{{ order.street_address2 }}
+{% endif %}
+{{ order.town_or_city }}
+{% if order.county %}
+{{ order.county }}
+{% endif %}
+{{ order.country }}
+{{ order.postcode }}
+
+Product(s) Ordered:
+
+{% for item in order.lineitems.all %}
+{{ item.product.name }} x {{ item.quantity }}
+{% endfor %}
+
+Subtotal: £{{ order.order_total }}
+Shipping Fee: £{{ order.delivery_cost }}
+Total Amount Paid: £{{ order.grand_total }}
+
+
+Your order is now being processed and will be shipped to you as soon as possible.
+
+If you have any questions or need further assistance, please don't hesitate to contact our customer support team via the contact form on the website.
+
+Thank you once again for choosing Infinite Realms. We hope you enjoy your new additions to your comic book and anime collection!
+
+Best regards,
+
+Infinite Realms
