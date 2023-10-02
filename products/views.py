@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from django.db.models.functions import Lower
+from django.http import JsonResponse
 
 from .models import Product, Category, Sub_category
 from .forms import ProductForm
@@ -181,3 +182,17 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+def get_sub_categories(request):
+    """
+    A view to handle ajax request for list of sub_categories
+    """
+    category = request.GET.get('value')
+    # selected_category = Category.objects.filter(name__in=category)
+    sub_categories = Sub_category.objects.filter(
+                category__in=category)
+
+    data = [{sub_category.name} for sub_category in sub_categories]
+
+    return JsonResponse(data, safe=False)
