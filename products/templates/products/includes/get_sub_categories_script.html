@@ -1,28 +1,28 @@
 <script type="text/javascript">
-    $(document).ready(function() {
-    $('[name="category"]').change(function() {
-        var selectedValue = $(this).val();
+    $(document).ready(function () {
+        $('select[name="category"] option:first').attr('disabled', 'disabled');
+        $('[name="category"]').change(function () {
+            var selectedValue = $(this).val();
 
-        $.ajax({
-            url: `/products/get_sub_categories/${selectedValue}/`,
-            method: 'GET',
-            dataType: 'json',
-            success: function(data) {
-                let subCategoryField = $('[name="sub_category"]');
-                subCategoryField.empty();
-                $.each(data, function(index, option) {
-                    let optionValue = index + 1;
-                    subCategoryField.append($('<option>', {
-                        value: optionValue,
-                        text: option
-                    }));
-                });
-            },
-            error: function(error) {
-                console.error('Error:', error);
-            }
+            $.ajax({
+                url: `/products/get_sub_categories/${selectedValue}/`,
+                method: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    let subCategoryField = $('[name="sub_category"]');
+                    subCategoryField.empty();
+                    $.each(data, function (index, option) {
+                        let optionValue = index + 1;
+                        subCategoryField.append($('<option>', {
+                            value: optionValue,
+                            text: option
+                        }));
+                    });
+                },
+                error: function (error) {
+                    console.error('Error:', error);
+                }
+            });
         });
     });
-});
-
 </script>
