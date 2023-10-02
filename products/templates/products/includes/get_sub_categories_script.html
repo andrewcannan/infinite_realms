@@ -1,16 +1,15 @@
 <script type="text/javascript">
     $(document).ready(function() {
     $('[name="category"]').change(function() {
-        const selectedValue = $(this).val();
+        var selectedValue = $(this).val();
 
         $.ajax({
-            url: `/get_sub_categories/?value=${selectedValue}`,
+            url: `/products/get_sub_categories/${selectedValue}/`,
             method: 'GET',
             dataType: 'json',
             success: function(data) {
                 let subCategoryField = $('[name="sub_category"]');
                 subCategoryField.empty();
-
                 $.each(data, function(index, option) {
                     let optionValue = index + 1;
                     subCategoryField.append($('<option>', {

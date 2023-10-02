@@ -184,15 +184,12 @@ def delete_product(request, product_id):
     return redirect(reverse('products'))
 
 
-def get_sub_categories(request):
+def get_sub_categories(request, category_id):
     """
     A view to handle ajax request for list of sub_categories
     """
-    category = request.GET.get('value')
-    # selected_category = Category.objects.filter(name__in=category)
-    sub_categories = Sub_category.objects.filter(
-                category__in=category)
+    sub_categories = Sub_category.objects.filter(category_id=category_id)
 
-    data = [{sub_category.name} for sub_category in sub_categories]
+    data = [sub_category.friendly_name for sub_category in sub_categories]
 
     return JsonResponse(data, safe=False)
