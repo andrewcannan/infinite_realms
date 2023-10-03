@@ -10,8 +10,8 @@ class Review(models.Model):
 
     product = models.ForeignKey('Product', on_delete=models.CASCADE)
     user = models.ForeignKey('User', on_delete=models.CASCADE)
-    title = models.CharField(max_length=80)
-    content = models.TextField()
+    title = models.CharField(max_length=80, null=False, blank=False)
+    content = models.TextField(null=False, blank=False)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
