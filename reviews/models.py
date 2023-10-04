@@ -8,9 +8,9 @@ class Review(models.Model):
     class Meta:
         verbose_name_plural = 'Product Reviews'
 
-    product = models.ForeignKey(Product, null=False, blank=False,
+    product = models.ForeignKey(Product, null=True, blank=True,
                                 on_delete=models.CASCADE)
-    user = models.ForeignKey(User, null=False, blank=False,
+    user = models.ForeignKey(User, null=True, blank=True,
                              on_delete=models.CASCADE)
     title = models.CharField(max_length=80, null=False, blank=False)
     content = models.TextField(null=False, blank=False)
