@@ -95,6 +95,25 @@
             </div>
         </div>
     </div>
+    
+    <div class="row">
+        <div class="col">
+            <div class="accordion bg-transparent" id="accordionExample">
+                <div class="card-header bg-transparent mb-3 border-0 text-center" id="headingOne">
+                    <h3 class="mb-0 text-center">
+                    <button class="logo-font text-black border-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Reviews
+                    </button>
+                    </h3>
+                    <p><small class="text-muted">Click to reveal <i class="fa-solid fa-chevron-down"></i></small></p>
+                </div>
+            
+                <div id="collapseOne" class="collapse" data-parent="#accordionExample">
+                    {% include 'reviews/reviews.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% include 'products/includes/modal.html' %}
 {% endblock %}
