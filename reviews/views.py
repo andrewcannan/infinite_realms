@@ -27,7 +27,7 @@ def add_review(request, product_id):
     """
     A view to render form and handle form submission
     """
-    product = get_object_or_404(Product, pk=product_id)
+    product = Product.objects.get(id=product_id)
 
     form = ReviewForm()
     template = 'reviews/add_review.html'
