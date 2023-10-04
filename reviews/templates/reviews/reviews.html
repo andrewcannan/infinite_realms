@@ -1,5 +1,6 @@
 <div class="row">
     <div class="col-12">
+        {% if reviews %}
         {% for review in reviews %}
             <div class="row mb-3">
                 <div class="col-10 offset-1 text-center">
@@ -18,5 +19,22 @@
             </div>
             {% include 'products/includes/modal.html' %}
         {% endfor %}
+        {% else %}
+            <div class="row mb-3">
+                <div class="col-10 offset-1 text-center">
+                    <p><small class="text-muted">No reviews to currently show.</small></p>
+                    <hr class="w-50 mb-4">
+                </div>
+            </div>
+        {% endif %}
+        <div class="col-12 mt-2 text-center mb-4">
+            <a href="" class="btn btn-black rounded-0">
+                <span class="icon">
+                    <i class="fa-solid fa-plus"></i>
+                </span>
+                <span class="text-uppercase">Leave a review</span>
+            </a>
+        </div>
     </div>
 </div>
+
