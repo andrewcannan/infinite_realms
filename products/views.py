@@ -7,6 +7,7 @@ from django.http import JsonResponse
 
 from .models import Product, Category, Sub_category
 from .forms import ProductForm
+from reviews.models import Review
 
 
 def all_products(request):
