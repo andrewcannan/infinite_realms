@@ -27,7 +27,9 @@ def reviews(request, product_id):
 @login_required
 def add_review(request, product_id):
     """
-    A view to render form and handle form submission
+    A view to render form and handle form submission.
+    - Params:
+        int: product_id
     """
     if not request.user.is_authenticated:
         messages.error(request,
@@ -65,7 +67,9 @@ def add_review(request, product_id):
 @login_required
 def edit_review(request, review_id):
     """
-    A view to render form and handle form submission
+    A view to render form and handle form submission.
+    - Params:
+        int: review_id
     """
     if not request.user.is_authenticated:
         messages.error(request,
@@ -102,3 +106,27 @@ def edit_review(request, review_id):
         'product': product,
     }
     return render(request, template, context)
+
+
+@login_required
+def delete_review(request, review_id):
+    """
+    Delete a review
+    - Params:
+        int: review_id
+    """
+    if not request.user.is_authenticated:
+        messages.error(request,
+                       'Sorry, you need to be logged in to do that.')
+        return redirect(reverse('account_login'))
+
+    product = Product.objects.filter(review=review)
+    review = Review.objects.get(id=review.id)
+
+    if user != review.user and not request.user.is_superuser:
+        messages.error(request, 'Sorry, you can only delete your own reviews.')
+        return redirect(reverse('home'))
+
+    review.delete()
+    messages.success(request, 'Review deleted!')
+    return redirect(reverse('product_detail', args=[product.id]))
