@@ -29,6 +29,11 @@ def add_review(request, product_id):
     """
     A view to render form and handle form submission
     """
+    if not request.user.is_authenticated:
+        messages.error(request,
+                       'Sorry, you need to be logged in to do that.')
+        return redirect(reverse('account_login'))
+
     product = Product.objects.get(id=product_id)
     user = UserProfile.objects.get(user=request.user)
 
