@@ -5,6 +5,7 @@ from django.contrib import messages
 from .forms import ReviewForm
 from products.models import Product
 from profiles.models import UserProfile
+from .models import Review
 
 
 def reviews(request, product_id):
@@ -76,11 +77,11 @@ def edit_review(request, review_id):
                        'Sorry, you need to be logged in to do that.')
         return redirect(reverse('account_login'))
 
-    review = Review.objects.get(id=review.id)
-    product = Product.objects.filter(review=review)
+    original_review = Review.objects.get(id=review_id)
+    product = original_review.product
     user = UserProfile.objects.get(user=request.user)
 
-    if user != review.user and not request.user.is_superuser:
+    if user != original_review.user and not request.user.is_superuser:
         messages.error(request, 'Sorry, you can only edit your own reviews.')
         return redirect(reverse('home'))
 
@@ -88,7 +89,10 @@ def edit_review(request, review_id):
         form = ReviewForm(request.POST)
 
         if form.is_valid():
+            form = ReviewForm(request.POST, instance=original_review)
             review = form.save()
+            review.product = original_review.product
+            review.user = original_review.user
             review.save()
             messages.success(request, "Product review updated successfully.")
             return redirect(reverse('product_detail', args=[product.id]))
@@ -97,11 +101,11 @@ def edit_review(request, review_id):
                             Please ensure the form is valid.")
 
     else:
-        form = ReviewForm(instance=review)
+        form = ReviewForm(instance=original_review)
 
     template = 'reviews/edit_review.html'
     context = {
-        'review': review,
+        'review': original_review,
         'form': form,
         'product': product,
     }
@@ -120,7 +124,6 @@ def delete_review(request, review_id):
                        'Sorry, you need to be logged in to do that.')
         return redirect(reverse('account_login'))
 
-    product = Product.objects.filter(review=review)
     review = Review.objects.get(id=review.id)
 
     if user != review.user and not request.user.is_superuser:
