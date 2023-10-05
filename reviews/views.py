@@ -124,9 +124,10 @@ def delete_review(request, review_id):
                        'Sorry, you need to be logged in to do that.')
         return redirect(reverse('account_login'))
 
-    review = Review.objects.get(id=review.id)
+    review = Review.objects.get(id=review_id)
+    product = review.product
 
-    if user != review.user and not request.user.is_superuser:
+    if request.user != review.user and not request.user.is_superuser:
         messages.error(request, 'Sorry, you can only delete your own reviews.')
         return redirect(reverse('home'))
 
