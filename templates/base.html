@@ -149,6 +149,17 @@
         <script type="text/javascript">
             $('.toast').toast('show');
         </script>
+        <script type="text/javascript">
+            $(function () {
+                $(document).click(function (event) {
+                    let clickover = $(event.target);
+                    let opened = $(".navbar-collapse").hasClass("navbar-collapse collapse show");
+                    if (opened === true && !clickover.hasClass("navbar-toggler")) {
+                        $("button.navbar-toggler").click();
+                    }
+                });
+            });
+        </script>
     {% endblock %}
 
     
