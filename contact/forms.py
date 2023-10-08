@@ -4,7 +4,7 @@ from .models import Contact
 
 class ContactForm(forms.ModelForm):
     class Meta:
-        model = contact
+        model = Contact
         exclude = ('user', 'email', 'created_at',)
 
     def __init__(self, *args, **kwargs):
