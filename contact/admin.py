@@ -9,7 +9,14 @@ class ContactAdmin(admin.ModelAdmin):
     fields = ('user', 'email', 'reason',
               'content', 'created_at', 'response_sent')
 
-    ordering = ('-created_at',)
+    list_display = (
+        'user',
+        'reason',
+        'created_at',
+        'response_sent'
+    )
+
+    ordering = ('response_sent', 'created_at')
 
 
 admin.site.register(Contact, ContactAdmin)
