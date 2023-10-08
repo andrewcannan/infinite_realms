@@ -15,7 +15,7 @@ class Contact(models.Model):
             ('wholesale', 'Wholesale or Bulk Orders'),
             ('privacy', 'Privacy Concerns or Data Requests'),
             ('marketing', 'Marketing or Advertising Inquiries'),
-            ('orders', 'Recent Orders (Please include order number)') 
+            ('orders', 'Recent Orders (Please include order number)'),
             ('general', 'General Questions or Comments'),
         ]
 
