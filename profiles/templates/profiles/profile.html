@@ -92,13 +92,41 @@
                             <button class="btn btn-link btn-block text-left collapsed" type="button"
                                 data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                                 aria-controls="collapseTwo">
-                                Collapsible Group Item #2
+                                Reviews
                             </button>
                         </h2>
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                         <div class="card-body">
-                            Some placeholder content for the second accordion panel. This panel is hidden by default.
+                            {% if reviews %}
+                            {% for review in reviews %}
+                            <div class="row mb-3 review-history">
+                                <div class="col-10 offset-1 text-center">
+                                    <h3 class="logo-font text-black">{{review.title}}</h3>
+                                    <p><small class="text-muted">By {{ review.user}} on {{review.created_at}}</small>
+                                    </p>
+                                    
+                                    <div class=" col-12 mt-3 mb-3 p-0 font-weight-bold">
+                                        <a class="text-info" href="{% url 'edit_review' review.id %}">Edit</a> |
+                                        <a class="text-danger" href="" data-toggle="modal"
+                                            data-target="#reviewModal-{{ review.id }}">Delete</a>
+                                    </div>
+                                    
+                                    <hr class="w-50 mb-4">
+                                    <p>{{ review.content }}</p>
+                                    <hr class="w-50 mb-4">
+                                </div>
+                            </div>
+                            {% include 'reviews/includes/modal.html' %}
+                            {% endfor %}
+                            {% else %}
+                            <div class="row mb-3">
+                                <div class="col-10 offset-1 text-center">
+                                    <p><small class="text-muted">You have no reviews to currently show.</small></p>
+                                    <hr class="w-50 mb-4">
+                                </div>
+                            </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>

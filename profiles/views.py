@@ -5,6 +5,7 @@ from django.contrib.auth.decorators import login_required
 from .models import UserProfile
 from .forms import UserProfileForm
 from checkout.models import Order
+from reviews.models import Review
 
 
 @login_required
@@ -13,6 +14,7 @@ def profile(request):
     Display the user's profile and handle form submission
     """
     profile = get_object_or_404(UserProfile, user=request.user)
+    reviews = Review.objects.filter(user=request.user)
 
     if request.method == 'POST':
         form = UserProfileForm(request.POST, instance=profile)
@@ -32,6 +34,7 @@ def profile(request):
         'form': form,
         'orders': orders,
         'on_profile_page': True,
+        'reviews': reviews,
     }
 
     return render(request, template, context)
