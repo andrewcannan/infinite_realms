@@ -149,8 +149,20 @@ main {
 
 /* HomePage */
 
+.home-container {
+    margin-bottom: 100px;
+}
+
 .mask-bg {
     background-color: rgba(255, 255, 255, 0.4);
+}
+
+.mask-logo {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.homepage-logo {
+    width: 100%;
 }
 
 /* Products page */
