@@ -38,4 +38,12 @@
     </div>
 {% endblock %}
 
+{% block postloadjs %}
+    {{ block.super }}
+    <script>
+        $(document).ready(function () {
+            $('select[name="reason"] option:first').attr('disabled', 'disabled');
+        });
+    </script>
+{% endblock %}
 
