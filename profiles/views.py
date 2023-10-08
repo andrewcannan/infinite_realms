@@ -37,7 +37,7 @@ def profile(request):
         'orders': orders,
         'on_profile_page': True,
         'reviews': reviews,
-        'sent_messages': sent messages,
+        'sent_messages': sent_messages,
     }
 
     return render(request, template, context)
