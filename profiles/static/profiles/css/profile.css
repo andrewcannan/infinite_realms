@@ -10,6 +10,10 @@
     overflow: hidden;
 }
 
+.btn.focus, .btn:focus {
+    box-shadow: none;
+}
+
 #profile-update-form .form-control {
     color: #000;
 }

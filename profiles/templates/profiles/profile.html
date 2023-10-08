@@ -37,7 +37,7 @@
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                            <button class="btn btn-block text-left text-black" type="button" data-toggle="collapse"
                                 data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 Order History
                             </button>
@@ -89,7 +89,7 @@
                 <div class="card">
                     <div class="card-header" id="headingTwo">
                         <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            <button class="btn btn-block text-left text-black collapsed" type="button"
                                 data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                                 aria-controls="collapseTwo">
                                 Reviews
@@ -97,10 +97,10 @@
                         </h2>
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <div class="card-body">
+                        <div class="card-body review-history">
                             {% if reviews %}
                             {% for review in reviews %}
-                            <div class="row mb-3 review-history">
+                            <div class="row mb-3">
                                 <div class="col-10 offset-1 text-center">
                                     <h3 class="logo-font text-black">{{review.title}}</h3>
                                     <p><small class="text-muted">By {{ review.user}} on {{review.created_at}}</small>
@@ -133,7 +133,7 @@
                 <div class="card">
                     <div class="card-header" id="headingThree">
                         <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                            <button class="btn btn-block text-left text-blackcollapsed" type="button"
                                 data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                                 aria-controls="collapseThree">
                                 Sent Messages
@@ -142,12 +142,12 @@
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                         data-parent="#accordionExample">
-                        <div class="card-body">
+                        <div class="card-body message-history">
                             {% if sent_messages %}
                             {% for message in sent_messages %}
-                            <div class="row mb-3 message-history">
+                            <div class="row mb-3">
                                 <div class="col-10 offset-1 text-center">
-                                    <h3 class="logo-font text-black">{{message.title}}</h3>
+                                    <h3 class="logo-font text-black">{{message.reason}}</h3>
                                     <p><small class="text-muted">By {{ message.user}} on {{message.created_at}}</small>
                                     </p>
                                     {% if message.response_sent == True %}
@@ -177,44 +177,6 @@
                     </div>
                 </div>
             </div>
-
-
-            <!-- <p class="text-muted">Order History</p>
-                <div class="order-history table-responsive">
-                    <table class="table table-sm table-borderless">
-                        <thead>
-                            <tr>
-                                <th>Order Number</th>
-                                <th>Date</th>
-                                <th>Items</th>
-                                <th>Order Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for order in orders %}
-                                <tr>
-                                    <td>
-                                        <a href="{% url 'order_history' order.order_number %}"
-                                        title="{{ order.order_number }}">
-                                            {{ order.order_number|truncatechars:6 }}
-                                        </a>
-                                    </td>
-                                    <td>{{ order.date }}</td>
-                                    <td>
-                                        <ul class="list-unstyled">
-                                            {% for item in order.lineitems.all %}
-                                                <li class="small">
-                                                    {{ item.product.name }} x{{ item.quantity }}
-                                                </li>
-                                            {% endfor %}
-                                        </ul>
-                                    </td>
-                                    <td>£{{ order.grand_total }}</td>
-                                </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
-                </div> -->
         </div>
     </div>
 </div>
