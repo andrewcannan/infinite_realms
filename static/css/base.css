@@ -46,6 +46,10 @@ main {
     width: fit-content;
 }
 
+.nav-logo {
+    width: 300px;
+}
+
 /* Buttons */
 
 .shop-now-button {

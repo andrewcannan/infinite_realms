@@ -17,6 +17,7 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -82,6 +83,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
             ],
             'builtins': [
