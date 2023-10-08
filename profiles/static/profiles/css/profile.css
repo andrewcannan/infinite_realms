@@ -1,6 +1,11 @@
 .order-history {
-    max-height: 416px; /* height of profile form + submit button */
+    max-height: 200px;
     overflow-y: scroll;
+}
+
+.accordion {
+    max-height: 470px;
+    overflow: hidden;
 }
 
 #profile-update-form .form-control {
