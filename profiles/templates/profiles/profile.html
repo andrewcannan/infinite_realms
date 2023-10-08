@@ -136,15 +136,43 @@
                             <button class="btn btn-link btn-block text-left collapsed" type="button"
                                 data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                                 aria-controls="collapseThree">
-                                Collapsible Group Item #3
+                                Sent Messages
                             </button>
                         </h2>
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                         data-parent="#accordionExample">
                         <div class="card-body">
-                            And lastly, the placeholder content for the third and final accordion panel. This panel is
-                            hidden by default.
+                            {% if sent_messages %}
+                            {% for message in sent_messages %}
+                            <div class="row mb-3 message-history">
+                                <div class="col-10 offset-1 text-center">
+                                    <h3 class="logo-font text-black">{{message.title}}</h3>
+                                    <p><small class="text-muted">By {{ message.user}} on {{message.created_at}}</small>
+                                    </p>
+                                    {% if message.response_sent == True %}
+                                    <p class="small mt-1 mb-0">
+                                        <i class="fa-solid fa-check"></i> Response sent.
+                                    </p>
+                                    {% else %}
+                                    <p class="small mt-1 mb-0">
+                                        <i class="fa-solid fa-xmark"></i> Response not yet sent.
+                                    </p>
+                                    {% endif %}
+                                    <hr class="w-50 mb-4">
+                                    <p>{{ message.content }}</p>
+                                    <hr class="w-50 mb-4">
+                                </div>
+                            </div>
+                            {% endfor %}
+                            {% else %}
+                            <div class="row mb-3">
+                                <div class="col-10 offset-1 text-center">
+                                    <p><small class="text-muted">You haven't sent any messages to the site owners.</small></p>
+                                    <hr class="w-50 mb-4">
+                                </div>
+                            </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,6 @@
 .order-history,
-.review-history {
+.review-history,
+.message-history {
     max-height: 200px;
     overflow-y: scroll;
 }
