@@ -6,6 +6,7 @@ from .models import UserProfile
 from .forms import UserProfileForm
 from checkout.models import Order
 from reviews.models import Review
+from contact.models import Contact
 
 
 @login_required
@@ -15,6 +16,7 @@ def profile(request):
     """
     profile = get_object_or_404(UserProfile, user=request.user)
     reviews = Review.objects.filter(user=request.user)
+    sent_messages = Contact.objects.filter(user=request.user)
 
     if request.method == 'POST':
         form = UserProfileForm(request.POST, instance=profile)
@@ -35,6 +37,7 @@ def profile(request):
         'orders': orders,
         'on_profile_page': True,
         'reviews': reviews,
+        'sent_messages': sent messages,
     }
 
     return render(request, template, context)
