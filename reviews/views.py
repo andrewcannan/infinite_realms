@@ -81,7 +81,7 @@ def edit_review(request, review_id):
     product = original_review.product
     user = UserProfile.objects.get(user=request.user)
 
-    if user != original_review.user and not request.user.is_superuser:
+    if request.user != original_review.user and not request.user.is_superuser:
         messages.error(request, 'Sorry, you can only edit your own reviews.')
         return redirect(reverse('home'))
 
