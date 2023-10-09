@@ -1,1 +1,1 @@
-web: gunicorn infinite-realms.wsgi:application
+web: gunicorn infinite_realms.wsgi:application
