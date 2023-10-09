@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['infinite-realms.herokuapp.com', '8000-andrewcanna-infiniterea-wjmnblkdvwh.ws-eu105.gitpod.io']
+ALLOWED_HOSTS = [os.environ.get('HEROKU_APP_NAME'), '8000-andrewcanna-infiniterea-wjmnblkdvwh.ws-eu105.gitpod.io']
 
 
 # Application definition
