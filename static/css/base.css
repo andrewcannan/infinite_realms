@@ -157,14 +157,6 @@ main {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-.mask-logo {
-    background-color: rgba(255, 255, 255, 0.6);
-}
-
-.homepage-logo {
-    width: 100%;
-}
-
 /* Products page */
 
 .card-img-top {
@@ -257,6 +249,13 @@ main {
 @media (min-width: 1200px) {
     .container {
       max-width: 80%;
+    }
+  }
+
+  /* Slightly larger container on xl screens */
+@media (min-width: 768px) {
+    .home-container {
+      margin-top: 150px;
     }
   }
   
