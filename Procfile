@@ -1,0 +1,1 @@
+web: gunicorn infinite-realms.wsgi:application
