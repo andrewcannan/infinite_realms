@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['8000-andrewcanna-infiniterea-wjmnblkdvwh.ws-eu105.gitpod.io',
-                 os.getenv('HEROKU_APP_NAME') + '.herokuapp.com']
+                 os.environ.get('HEROKU_APP_NAME') + '.herokuapp.com']
 
 
 # Application definition
