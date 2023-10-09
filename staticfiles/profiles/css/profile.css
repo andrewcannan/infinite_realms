@@ -1,0 +1,43 @@
+.review-history,
+.message-history {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.order-history {
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.accordion {
+    max-height: 420px;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.accordion>.card {
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: none;
+}
+
+#profile-update-form .form-control {
+    color: #000;
+}
+
+#profile-update-form input::placeholder {
+    color: #aab7c4;
+}
+
+#id_default_country,
+#id_default_country option:not(:first-child) {
+    color: #000;
+}
+
+#id_default_country option:first-child {
+    color: #aab7c4;
+}
