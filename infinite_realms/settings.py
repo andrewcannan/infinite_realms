@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['8000-andrewcanna-infiniterea-wjmnblkdvwh.ws-eu105.gitpod.io',
-                 'infinite-realms-366e4ca2f09e.herokuapp.com']
+                 'https://infinite-realms-366e4ca2f09e.herokuapp.com/']
 
 
 # Application definition
