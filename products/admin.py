@@ -20,6 +20,7 @@ class CategoryAdmin(admin.ModelAdmin):
         'friendly_name',
         'name',
     )
+    ordering = ('friendly_name',)
 
 
 class SubCategoryAdmin(admin.ModelAdmin):
@@ -28,7 +29,7 @@ class SubCategoryAdmin(admin.ModelAdmin):
         'name',
         'category',
     )
-
+    ordering = ('category', 'friendly_name',)
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
