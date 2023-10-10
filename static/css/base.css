@@ -44,6 +44,7 @@ main {
 
 .main-logo-link {
     width: fit-content;
+    padding-bottom: 0;
 }
 
 .nav-logo {
