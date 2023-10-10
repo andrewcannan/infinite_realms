@@ -26,7 +26,39 @@
     <div class="row">
         <div class="col">
             {% if bag_items %}
-            <div class="table-responsive rounded">
+            <!-- Shopping Bag list small screen sizes -->
+            <div class="row d-md-none">
+                {% for item in bag_items %}
+                <div class="col-10 offset-1 mb-1">
+                    <img class="img-fluid rounded bag-image" src="{{ item.product.image.url }}">
+                </div>
+                <div class="col-10 offset-1 mb-1">
+                    <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                    <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
+                </div>
+                <div class="col-10 offset-1 mb-2">
+                    <p class="my-0">{{ item.quantity }} x £{{ item.product.price }}</p>
+                </div>
+                <div class="col-6 offset-1 mb-1">
+                    {% include 'bag/quantity_update_form.html' %}
+                </div>
+                <div class="col-10 offset-1 mb-1">
+                    <p class="my-0">Sub-Total: £{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                </div>
+                <hr class="w-50 mb-4">
+                {% endfor %}
+            </div>
+            <div class="row d-md-none">
+                <div class="col-10 offset-1">
+                    {% include 'bag/totals.html' %}
+                </div>
+                <div class="col-10 offset-1">
+                    {% include 'bag/buttons.html' %}
+                </div>
+            </div>
+
+            <!-- Shopping Bag table medium screen sizes -->
+            <div class="table-responsive rounded d-none d-md-block">
                 <table class="table table-sm table-borderless">
                     <thead class="text-black">
                         <tr>
