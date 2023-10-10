@@ -176,6 +176,12 @@ main {
     box-shadow: 0 0 11px rgba(33,33,33,.2);;
 }
 
+/* Shopping Bag */
+
+.bag-image {
+    height: 100px;
+}
+
 /* Toasts */
 
 .message-container {
