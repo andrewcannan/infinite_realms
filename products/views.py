@@ -44,19 +44,21 @@ def all_products(request):
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
+            categories = Category.objects.filter(name__in=categories).order_by(
+                'id')
             all_sub_categories = Sub_category.objects.filter(
-                category__in=categories)
+                category__in=categories).order_by('id')
 
         if 'category' and 'sub_category' in request.GET:
             categories = request.GET['category'].split(',')
             sub_categories = request.GET['sub_category'].split(',')
             products = products.filter(sub_category__name__in=sub_categories)
-            categories = Category.objects.filter(name__in=categories)
+            categories = Category.objects.filter(name__in=categories).order_by(
+                'id')
             current_sub_categories = Sub_category.objects.filter(
-                name__in=sub_categories)
+                name__in=sub_categories).order_by('id')
             all_sub_categories = Sub_category.objects.filter(
-                category__in=categories)
+                category__in=categories).order_by('id')
 
     if request.GET:
         if 'q' in request.GET:
