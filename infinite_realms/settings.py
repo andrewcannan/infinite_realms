@@ -26,7 +26,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEVELOPMENT')
 
-ALLOWED_HOSTS = ['infinite-realms-366e4ca2f09e.herokuapp.com', '8000-andrewcanna-infiniterea-wjmnblkdvwh.ws-eu105.gitpod.io']
+ALLOWED_HOSTS = ['infinite-realms-366e4ca2f09e.herokuapp.com',
+                 '8000-andrewcanna-infiniterea-wjmnblkdvwh.ws-eu105.gitpod.io']
 
 
 # Application definition
@@ -217,7 +218,22 @@ STRIPE_CURRENCY = 'gbp'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
-DEFAULT_FROM_EMAIL = 'infiniterealms@example.com'
+
+# Email
+
+if 'DEVELOPMENT' in os.environ:
+    if os.environ.get('DEVELOPMENT') is True:
+        EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+        DEFAULT_FROM_EMAIL = 'infiniterealms@example.com'
+    else:
+        EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+        EMAIL_USE_TLS = True
+        EMAIL_PORT = 587
+        EMAIL_HOST = 'smtp.gmail.com'
+        EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+        EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
+        DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
