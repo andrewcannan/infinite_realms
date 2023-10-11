@@ -66,7 +66,7 @@
                                             <span hidden>Decrement Quantity</span>
                                         </button>
                                     </div>
-                                    <label for="id_qty_{{ product.id }}">Adjust Quantity</label>
+                                    <label for="id_qty_{{ product.id }}" hidden>Adjust Quantity</label>
                                     <input class="form-control qty_input" type="number" 
                                     name="quantity" value="1" min="1" max="99" 
                                     data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
