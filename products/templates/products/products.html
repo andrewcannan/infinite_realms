@@ -16,12 +16,12 @@
 <div class="container">
     <div class="row">
         <div class="col text-center mt-3">
-            {% if current_categories %}</h2>
+            {% if current_categories %}
                 {% for c in current_categories %}
-                <h2 class="logo-font mb-3 font-weight-bold">{{ c.friendly_name }}</h2>
+                <h1 class="h2 logo-font mb-3 font-weight-bold">{{ c.friendly_name }}</h1>
                 {% endfor %}
             {% else %}
-                <h2 class="logo-font font-weight-bold">All Products</h2>
+                <h1 class="h2 logo-font font-weight-bold">All Products</h1>
             {% endif %}
 
             {% for cat in current_categories %}
