@@ -114,7 +114,7 @@
                                     {% if product.sub_category %}
                                     <p class="small mt-1 mb-0">
                                         <a class="text-muted"
-                                            href="{% url 'products' %}?sub_category={{ product.sub_category.name }}">
+                                            href="{% url 'products' %}?category={{ product.category.name }}&sub_category={{ product.sub_category.name }}">
                                             <i class="fas fa-tag mr-1"></i>{{ product.sub_category.friendly_name }}
                                         </a>
                                     </p>
