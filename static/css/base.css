@@ -51,6 +51,10 @@ main {
     width: 300px;
 }
 
+.bag-text {
+    color: #106527;
+}
+
 /* Buttons */
 
 .shop-now-button {
