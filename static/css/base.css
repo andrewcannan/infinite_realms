@@ -111,6 +111,10 @@ main {
     cursor: pointer;
 }
 
+.update-link {
+    color: #0E606C;
+}
+
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
     display: inline-block;
