@@ -6,6 +6,29 @@
 
 **[Link to the Deployed Site](https://infinite-realms-366e4ca2f09e.herokuapp.com/)**
 <br><br>
+----------------
+
+## Contents
+----------------
+
+* [Deployment Steps](#deployment-steps)
+    * [Install Project Requirements](#step-1-install-project-requirements)
+    * [Set Up External Database on ElephantSQL](#step-2-set-up-external-database-on-elephantsql)
+    * [Heroku Setup](#step-3-heroku-setup)
+    * [Connect Database to GitPod](#step-4-connect-database-to-gitpod)
+    * [Fixtures](#step-5-fixtures)
+    * [Create Superuser](#step-6-create-superuser)
+    * [ Generate SECRET_KEY](#step-7-generate-secret_key)
+    * [Deploying to Heroku](#step-8-deploying-to-heroku)
+    * [Set Up Amazon Web Services (AWS) S3](#step-9-set-up-amazon-web-services-aws-s3)
+    * [Connect Django to S3](#step-10-connect-django-to-s3)
+    * [Set Up Stripe](#step-11-set-up-stripe)
+* [Forking Repository](#forking-the-github-repository)
+* [Make Local Clone](#making-a-local-clone)
+* [Version Control](#version-control)
+
+
+<br><br>
 
 ## Deployment Steps
 ----------------
