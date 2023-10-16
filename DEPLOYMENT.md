@@ -1,7 +1,11 @@
 # Deployment, Local Development and Version Control
 ----------------
 
+<img src="./documentation/responsiveness/responsive-mockup.png">
+<br><br>
 
+**[Link to the Deployed Site](https://infinite-realms-366e4ca2f09e.herokuapp.com/)**
+<br><br>
 
 ## Deployment Steps
 ----------------
