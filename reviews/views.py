@@ -61,6 +61,7 @@ def add_review(request, product_id):
     context = {
         'form': form,
         'product': product,
+        'hide_bag': True,
     }
     return render(request, template, context)
 
