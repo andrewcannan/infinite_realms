@@ -222,17 +222,16 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 # Email
 
 if 'DEVELOPMENT' in os.environ:
-    if os.environ.get('DEVELOPMENT') is True:
-        EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-        DEFAULT_FROM_EMAIL = 'infiniterealms@example.com'
-    else:
-        EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-        EMAIL_USE_TLS = True
-        EMAIL_PORT = 587
-        EMAIL_HOST = 'smtp.gmail.com'
-        EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-        EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
-        DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    DEFAULT_FROM_EMAIL = 'infiniterealms@example.com'
+else:
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_USE_TLS = True
+    EMAIL_PORT = 587
+    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
+    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
 
 # Default primary key field type
