@@ -35,7 +35,7 @@ def profile(request):
     context = {
         'form': form,
         'orders': orders,
-        'on_profile_page': True,
+        'hide_bag': True,
         'reviews': reviews,
         'sent_messages': sent_messages,
     }
