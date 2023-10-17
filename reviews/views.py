@@ -109,6 +109,7 @@ def edit_review(request, review_id):
         'review': original_review,
         'form': form,
         'product': product,
+        'hide_bag': True,
     }
     return render(request, template, context)
 
