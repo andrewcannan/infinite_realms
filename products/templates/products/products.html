@@ -23,7 +23,7 @@
             {% else %}
                 <h1 class="h2 logo-font font-weight-bold">All Products</h1>
             {% endif %}
-
+            <!-- Display links to change sub-categories in current category -->
             {% for cat in current_categories %}
                 {% for c in all_sub_categories %}
                     {% if c in current_sub_categories %}
@@ -45,6 +45,7 @@
     </div>
     <div class="row">
         <div class="product-container col-10 offset-1">
+            <!-- Sort selector -->
             <div class="row mt-1 mb-2">
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper w-50">
@@ -88,6 +89,7 @@
                     </p>
                 </div>
             </div>
+            <!-- Product cards -->
             <div class="row">
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-5">
@@ -156,23 +158,22 @@
         </div>
     </div>
 </div>
+<!-- Back to top button -->
 <button class="btt-button shadow-sm rounded-0 border border-black" aria-label="Back to top button" title="Back to top button">
-    <a class="btt-link d-flex h-100">
         <i class="fas fa-chevron-up text-black mx-auto my-auto"></i>
-    </a>
 </button>
 
 {% endblock %}
 
 {% block postloadjs %}
 {{ block.super }}
-    <script type="text/javascript">
-        $('.btt-link').click(function(e){
+    <script>
+        $('.btt-button').click(function(e){
             window.scrollTo(0,0)
         })
     </script>
 
-    <script type="text/javascript">
+    <script>
         $('#sort-selector').change(function() {
             let selector = $(this);
             let currentUrl = new URL(window.location);
