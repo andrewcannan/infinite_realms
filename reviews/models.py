@@ -4,7 +4,9 @@ from products.models import Product
 
 
 class Review(models.Model):
-
+    """
+    Class extends djangos Model class, create Review model
+    """
     class Meta:
         verbose_name_plural = 'Product Reviews'
 
