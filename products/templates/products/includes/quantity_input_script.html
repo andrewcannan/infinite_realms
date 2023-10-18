@@ -25,20 +25,22 @@
     // Increment quantity
     $('.increment-qty').click(function(e) {
        e.preventDefault();
-       let closestInput = $(this).closest('.input-group').find('.qty_input')[0];
-       let currentValue = parseInt($(closestInput).val());
-       $(closestInput).val(currentValue + 1);
        let itemId = $(this).data('item_id');
+       let closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+       var allQtyInputs = $(`.input-group_${itemId} input[name='quantity']`);
+       let currentValue = parseInt($(closestInput).val());
+       $(allQtyInputs).val(currentValue + 1);
        handleEnableDisable(itemId);
     })
 
     // Decrement quantity
     $('.decrement-qty').click(function(e) {
         e.preventDefault();
-        let closestInput = $(this).closest('.input-group').find('.qty_input')[0];
-        let currentValue = parseInt($(closestInput).val());
-        $(closestInput).val(currentValue - 1);
-        let itemId = $(this).data('item_id');
-        handleEnableDisable(itemId);
+       let itemId = $(this).data('item_id');
+       let closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+       var allQtyInputs = $(`.input-group_${itemId} input[name='quantity']`);
+       let currentValue = parseInt($(closestInput).val());
+       $(allQtyInputs).val(currentValue - 1);
+       handleEnableDisable(itemId);
     })
 </script>
