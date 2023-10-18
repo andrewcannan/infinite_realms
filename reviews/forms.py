@@ -3,6 +3,9 @@ from .models import Review
 
 
 class ReviewForm(forms.ModelForm):
+    """
+    Class extends djangos ModelForm class
+    """
     class Meta:
         model = Review
         exclude = ('product', 'user', 'created_at',)
