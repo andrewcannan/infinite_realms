@@ -3,6 +3,9 @@ from .models import Contact
 
 
 class ContactAdmin(admin.ModelAdmin):
+    """
+    Class extends djangos ModelAdmin class
+    """
     readonly_fields = ('user', 'email', 'reason',
                        'content', 'created_at',)
 
