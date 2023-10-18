@@ -3,7 +3,9 @@ from django.contrib.auth.models import User
 
 
 class Contact(models.Model):
-
+    """
+    Class extends djangos Model class, create order model
+    """
     class Meta:
         verbose_name_plural = 'Contact Us Submissions'
 
