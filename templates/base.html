@@ -150,6 +150,7 @@
     {% include 'includes/footer.html' %}
 
     {% block postloadjs %}
+        <!-- script to show toasts and hide after 10 seconds -->
         <script type="text/javascript">
             $('.toast').toast('show');
 
@@ -157,6 +158,8 @@
             $('.toast').toast('hide');
         }, 10000);
         </script>
+
+        <!-- Script to close navbar when display clicked anywhere outside of navbar when open -->
         <script type="text/javascript">
             $(function () {
                 $(document).click(function (event) {
