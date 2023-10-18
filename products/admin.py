@@ -3,6 +3,9 @@ from .models import Product, Category, Sub_category
 
 
 class ProductAdmin(admin.ModelAdmin):
+    """
+    Class extends djangos ModelAdmin class
+    """
     list_display = (
         'sku',
         'name',
@@ -16,6 +19,9 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class CategoryAdmin(admin.ModelAdmin):
+    """
+    Class extends djangos ModelAdmin class
+    """
     list_display = (
         'friendly_name',
         'name',
@@ -24,12 +30,16 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 class SubCategoryAdmin(admin.ModelAdmin):
+    """
+    Class extends djangos ModelAdmin class
+    """
     list_display = (
         'friendly_name',
         'name',
         'category',
     )
     ordering = ('category', 'friendly_name',)
+
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
