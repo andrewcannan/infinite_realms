@@ -4,7 +4,9 @@ from .models import Product, Category, Sub_category
 
 
 class ProductForm(forms.ModelForm):
-
+    """
+    Class extends djangos ModelForm class
+    """
     class Meta:
         model = Product
         fields = '__all__'
@@ -14,6 +16,9 @@ class ProductForm(forms.ModelForm):
                              widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
+        """
+        Set choices for select dropdowns and classes
+        """
         super().__init__(*args, **kwargs)
         categories = Category.objects.all()
         friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
