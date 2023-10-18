@@ -2,7 +2,9 @@ from django.db import models
 
 
 class Category(models.Model):
-
+    """
+    Class extends djangos Model class, create Category model
+    """
     class Meta:
         verbose_name_plural = 'Categories'
 
@@ -17,7 +19,9 @@ class Category(models.Model):
 
 
 class Sub_category(models.Model):
-
+    """
+    Class extends djangos Model class, create Sub_category model
+    """
     class Meta:
         verbose_name_plural = 'Sub-Categories'
 
@@ -34,6 +38,9 @@ class Sub_category(models.Model):
 
 
 class Product(models.Model):
+    """
+    Class extends djangos Model class, create Product model
+    """
     category = models.ForeignKey(
         'Category', null=True, blank=True, on_delete=models.SET_NULL)
     sub_category = models.ForeignKey(
