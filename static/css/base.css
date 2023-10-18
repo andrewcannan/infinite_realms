@@ -43,12 +43,14 @@ main {
 /* Header */
 
 .main-logo-link {
-    width: fit-content;
+    width: 300px;;
     padding-bottom: 0;
+    padding-left: 30px;
 }
 
 .nav-logo {
-    width: 300px;
+    width: 100%;
+    height: auto;
 }
 
 .bag-text {
