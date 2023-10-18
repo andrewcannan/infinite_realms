@@ -1,5 +1,6 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
+        <!-- All Products -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
@@ -11,7 +12,7 @@
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
-
+        <!-- Collectibles -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="collectibles-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Collectibles
@@ -23,7 +24,7 @@
                 <a href="{% url 'products' %}?category=collectibles" class="dropdown-item">All Collectibles</a>
             </div>
         </li>
-
+        <!-- Comics -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="comic-book-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Comic Books
@@ -36,7 +37,7 @@
                 <a href="{% url 'products' %}?category=comics" class="dropdown-item">All Comic Books</a>
             </div>
         </li>
-
+        <!-- Gifts and Home -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="gifts-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Gifts &amp; Home
