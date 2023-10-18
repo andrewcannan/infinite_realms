@@ -3,12 +3,17 @@ from .models import Contact
 
 
 class ContactForm(forms.ModelForm):
-
+    """
+    Class extends djangos ModelForm class
+    """
     class Meta:
         model = Contact
         fields = ['reason', 'content']
 
     def __init__(self, *args, **kwargs):
+        """
+        Add placeholders and classes
+        """
         super().__init__(*args, **kwargs)
 
         if self.fields['content']:
