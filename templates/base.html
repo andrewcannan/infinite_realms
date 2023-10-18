@@ -154,7 +154,7 @@
 
     {% block postloadjs %}
         <!-- script to show toasts and hide after 10 seconds -->
-        <script type="text/javascript">
+        <script>
             $('.toast').toast('show');
 
             setTimeout(function(){
@@ -163,7 +163,7 @@
         </script>
 
         <!-- Script to close navbar when display clicked anywhere outside of navbar when open -->
-        <script type="text/javascript">
+        <script>
             $(function () {
                 $(document).click(function (event) {
                     let clickover = $(event.target);
