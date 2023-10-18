@@ -63,7 +63,7 @@
                                         <tr>
                                             <td>
                                                 <a href="{% url 'order_history' order.order_number %}"
-                                                    title="{{ order.order_number }}">
+                                                    title="{{ order.order_number }}" class="update-link">
                                                     {{ order.order_number|truncatechars:6 }}
                                                 </a>
                                             </td>
@@ -107,7 +107,7 @@
                                     </p>
                                     
                                     <div class=" col-12 mt-3 mb-3 p-0 font-weight-bold">
-                                        <a class="text-info" href="{% url 'edit_review' review.id %}">Edit</a> |
+                                        <a class="update-link" href="{% url 'edit_review' review.id %}">Edit</a> |
                                         <a class="text-danger" href="" data-toggle="modal"
                                             data-target="#reviewModal-{{ review.id }}">Delete</a>
                                     </div>
