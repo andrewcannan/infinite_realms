@@ -3,6 +3,9 @@ from .models import Review
 
 
 class ReviewAdmin(admin.ModelAdmin):
+    """
+    Class extends djangos ModelAdmion class
+    """
     list_display = (
         'product',
         'user',
