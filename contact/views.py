@@ -1,8 +1,31 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
+from django.conf import settings
 
 from .forms import ContactForm
+
+
+@login_required
+def send_confirmation_email(request, contact):
+    """
+    Send the user a confirmation email
+    """
+    user = request.user
+    cust_email = user.email
+    subject = render_to_string(
+        'contact/confirmation_emails/confirmation_email_subject.txt',)
+    body = render_to_string(
+        'contact/confirmation_emails/confirmation_email_body.txt',
+        {'contact': contact, 'contact_email': settings.DEFAULT_FROM_EMAIL})
+    send_mail(
+        subject,
+        body,
+        settings.DEFAULT_FROM_EMAIL,
+        [cust_email]
+    )
 
 
 @login_required
@@ -23,7 +46,10 @@ def contact_us(request):
             contact.user = request.user
             contact.email = request.user.email
             contact.save()
-            messages.success(request, "Contact message sent successfully.")
+            messages.success(request, f"Contact message sent successfully. \
+                             A confirmation email will be sent to\
+                             {contact.email}.")
+            send_confirmation_email(request, contact)
             return redirect(reverse('home'))
         else:
             messages.error(request, "Failed to send message.\

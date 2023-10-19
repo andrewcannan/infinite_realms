@@ -1,0 +1,15 @@
+Thank you for reaching out to us. This is an automated confirmation that we have received your message. We appreciate your interest and will do our best to respond promptly.
+
+Here are the details of your message:
+
+
+Subject: {{ contact.reason.capitalize }}
+
+Message:
+{{ contact.content }}
+
+We will review your message and get back to you as soon as possible.
+
+Best regards,
+
+Infinite Realms
