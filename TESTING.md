@@ -15,7 +15,7 @@
     * [CSS Validation](#css-validation)
     * [JS Validation](#js-validation)
     * [Python Validation](#python-validation)
-    * [Lighthouse](#lighthouse)
+    * [Lighthouse Reports](#lighthouse-report)
     * [WAVE Accessibility](#wave-accessibility-checker)
 <br><br>
 
@@ -444,7 +444,7 @@ Pylance used during development to detect errors and PEP8 compliance, but code a
 [Chrome DevTools' Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to test the performance, accessibility, best practices and SEO of the site. Unfortunately, Best Practices was only ever 95 across the site instead of a desirable 100, investigation pointed towards warnings that cross-site cookies from Stripe will be blocked in future chrome versions. Looking into this, Stripe say they are endeavouring to continuely add support for this.
 
 <details>
-<summary>Homepage - Scores above 90</summary>
+<summary>Homepage - Scores above 90.</summary>
 <br>
 <img src="documentation/lighthouse_reports/home-lighthouse.png">
 </details>
@@ -455,32 +455,32 @@ Pylance used during development to detect errors and PEP8 compliance, but code a
 <img src="documentation/lighthouse_reports/products-funkos-lighthouse.png">
 </details>
 <details>
-<summary>Product Detail - Scores above 90</summary>
+<summary>Product Detail - Scores above 90.</summary>
 <br>
 <img src="documentation/lighthouse_reports/product-detail-lighthouse.png">
 </details>
 <details>
-<summary>Add Product - Scores above 90</summary>
+<summary>Add Product - Scores above 90.</summary>
 <br>
 <img src="documentation/lighthouse_reports/add-product-lighthouse.png">
 </details>
 <details>
-<summary>Edit Product - Scores above 90</summary>
+<summary>Edit Product - Scores above 90.</summary>
 <br>
 <img src="documentation/lighthouse_reports/edit-product-lighthouse.png">
 </details>
 <details>
-<summary>Add Review - Scores above 90</summary>
+<summary>Add Review - Scores above 90.</summary>
 <br>
 <img src="documentation/lighthouse_reports/add-review-lighthouse.png">
 </details>
 <details>
-<summary>Edit Review - Scores above 90</summary>
+<summary>Edit Review - Scores above 90.</summary>
 <br>
 <img src="documentation/lighthouse_reports/edit-review-lighthouse.png">
 </details>
 <details>
-<summary>Bag - Scores above 90</summary>
+<summary>Bag - Scores above 90.</summary>
 <br>
 <img src="documentation/lighthouse_reports/bag-lighthouse.png">
 </details>
@@ -490,33 +490,119 @@ Pylance used during development to detect errors and PEP8 compliance, but code a
 <img src="documentation/lighthouse_reports/checkout-lighthouse.png">
 </details>
 <details>
-<summary>Checkout Success - Scores above 90</summary>
+<summary>Checkout Success - Scores above 90.</summary>
 <br>
 <img src="documentation/lighthouse_reports/checkout-success-lighthouse.png">
 </details>
 <details>
-<summary>Register - Scores above 90</summary>
+<summary>Register - Scores above 90.</summary>
 <br>
 <img src="documentation/lighthouse_reports/register-lighthouse.png">
 </details>
 <details>
-<summary>Login - Scores above 90</summary>
+<summary>Login - Scores above 90.</summary>
 <br>
 <img src="documentation/lighthouse_reports/login-lighthouse.png">
 </details>
 <details>
-<summary>Logout - Scores above 90</summary>
+<summary>Logout - Scores above 90.</summary>
 <br>
 <img src="documentation/lighthouse_reports/logout-lighthouse.png">
 </details>
 <details>
-<summary>Contact - Scores above 90</summary>
+<summary>Contact - Scores above 90.</summary>
 <br>
 <img src="documentation/lighthouse_reports/contact-lighthouse.png">
 </details>
 <details>
-<summary>Profile - Scores above 90</summary>
+<summary>Profile - Scores above 90.</summary>
 <br>
 <img src="documentation/lighthouse_reports/profile-lighthouse.png">
 </details>
+<br><br>
 
+### WAVE Accessibility Checker
+
+[WAVE](https://wave.webaim.org/) was used to ensure that site is also accessible to individuals with disabilities. WAVE effectively spots various accessibility and Web Content Accessibility Guideline (WCAG) issues, which are subsequently addressed based on the initial assessment outcomes.
+
+<details>
+<summary>Homepage - 0 Errors or Alerts.</summary>
+<br>
+<img src="documentation/wave_reports/wave-report-home.png">
+</details>
+<details>
+<summary>Products - 0 Errors, 1 Alert for possible headings for price on product cards. Ignored as not meant to be heading.</summary>
+<br>
+<img src="documentation/wave_reports/wave-report-products.png">
+</details>
+<details>
+<summary>Product Detail - 0 Errors, 1 Alert for same possible heading for price.</summary>
+<br>
+<img src="documentation/wave_reports/wave-report-product-detail.png">
+</details>
+<details>
+<summary>Add Product - 0 Errors or Alerts.</summary>
+<br>
+<img src="documentation/wave_reports/wave-report-add-product.png">
+</details>
+<details>
+<summary>Edit Product - 0 Errors or Alerts.</summary>
+<br>
+<img src="documentation/wave_reports/wave-report-edit-product.png">
+</details>
+<details>
+<summary>Add Review - 0 Errors or Alerts.</summary>
+<br>
+<img src="documentation/wave_reports/wave-report-add-review.png">
+</details>
+<details>
+<summary>Edit Review - 0 Errors or Alerts.</summary>
+<br>
+<img src="documentation/wave_reports/wave-report-edit-review.png">
+</details>
+<details>
+<summary>Bag - 0 Errors or Alerts.</summary>
+<br>
+<img src="documentation/wave_reports/wave-report-bag.png">
+</details>
+<details>
+<summary>Checkout - 1 Contrast Error. Points to placeholder in Country Select, decided to leave as its the same color as the other placeholders which pass contrast check. 1 Alert for skipped heading level but H1, H2, H3, H4 and H5 all present.</summary>
+<br>
+<img src="documentation/wave_reports/wave-report-checkout.png">
+</details>
+<details>
+<summary>Checkout Success - 0 Errors or Alerts.</summary>
+<br>
+<img src="documentation/wave_reports/wave-report-checkout-success.png">
+</details>
+<details>
+<summary>Register - 0 Errors or Alerts.</summary>
+<br>
+<img src="documentation/wave_reports/wave-report-register.png">
+</details>
+<details>
+<summary>Login - 0 Errors or Alerts.</summary>
+<br>
+<img src="documentation/wave_reports/wave-report-login.png">
+</details>
+<details>
+<summary>Logout - 0 Errors or Alerts.</summary>
+<br>
+<img src="documentation/wave_reports/wave-report-logout.png">
+</details>
+<details>
+<summary>Contact - 0 Errors, 1 Alert for redundant link. Points to home link in footer being redundant as also present in header. Strangely enough only present on this page, also as header link isn't available to mobile users it acts as a convenient link back to the homepage.</summary>
+<br>
+<img src="documentation/wave_reports/wave-report-contact.png">
+</details>
+<details>
+<summary>Profile - 1 Contrast error on same Country Select as checkout.html.</summary>
+<br>
+<img src="documentation/wave_reports/wave-report-profile.png">
+</details>
+<details>
+<summary>404 - 0 Errors 1 alert. Redundant link back to homepage.</summary>
+<br>
+<img src="documentation/wave_reports/wave-report-404.png">
+</details>
+<br><br>
