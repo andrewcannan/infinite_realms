@@ -7,6 +7,7 @@ class ResponseAdminInline(admin.TabularInline):
     Class extends djangos TabularInline class
     """
     model = Response
+    readonly_fields = ('message',)
 
 
 class ContactAdmin(admin.ModelAdmin):
