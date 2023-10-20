@@ -601,6 +601,16 @@ Pylance used during development to detect errors and PEP8 compliance, but code a
 <img src="documentation/wave_reports/wave-report-profile.png">
 </details>
 <details>
+<summary>Enquiries - 0 Errors or Alerts.</summary>
+<br>
+<img src="documentation/wave_reports/wave-report-enquiries.png">
+</details>
+<details>
+<summary>Send Response - 0 Errors or Alerts.</summary>
+<br>
+<img src="documentation/wave_reports/wave-report-send_response.png">
+</details>
+<details>
 <summary>404 - 0 Errors 1 alert. Redundant link back to homepage.</summary>
 <br>
 <img src="documentation/wave_reports/wave-report-404.png">
