@@ -45,7 +45,7 @@
                                 <td class="d-none d-md-block">{{message.created_at }}</td>
                                 <td>{{ message.email }}</td>
                                 <td>{{ message.reason.capitalize }}</td>
-                                <td><a class="btn btn-black rounded-0" href="">Reply</a></td>
+                                <td><a class="btn btn-black rounded-0" href="{% url 'send_response' message.id %}">Reply</a></td>
                             </tr>
                             {% endfor %}
                         </tbody>
