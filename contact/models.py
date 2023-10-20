@@ -32,3 +32,16 @@ class Contact(models.Model):
 
     def __str__(self):
         return f'{self.user} - {self.reason}'
+
+
+class Response(models.Model):
+    """
+    Class extends djangos Model class, create Response model
+    """
+    contact = models.ForeignKey(Contact, null=False, blank=False,
+                                on_delete=models.CASCADE,
+                                related_name='response')
+    message = models.TextField(null=False, blank=False)
+
+    def __str__(self):
+        return f'{self.message} in response to {self.contact}'
