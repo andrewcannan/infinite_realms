@@ -97,26 +97,33 @@ def send_response(request, contact_id):
         messages.error(request,
                        'Sorry, you do not have the required permissions.')
         return redirect(reverse('home'))
-    print('contact_id:', contact_id)
-    contact = get_object_or_404(Contact, pk=contact_id)
-    if request.method == "POST":
-        form = ResponseForm(request.POST)
 
-        if form.is_valid():
-            response = form.save(commit=False)
-            response.contact = contact
-            response.save()
-            # switch boolean field on contact to true
-            contact.response_sent = True
-            contact.save()
-            messages.success(request, "Response sent to user successfully.")
-            send_response_email(request, contact, response)
-            return redirect(reverse('home'))
+    contact = get_object_or_404(Contact, pk=contact_id)
+
+    # only have ability to respond to enquiries if one not already sent
+    if not contact.response_sent:
+        if request.method == "POST":
+            form = ResponseForm(request.POST)
+
+            if form.is_valid():
+                response = form.save(commit=False)
+                response.contact = contact
+                response.save()
+                # switch boolean field on contact to true
+                contact.response_sent = True
+                contact.save()
+                messages.success(request,
+                                 "Response sent to user successfully.")
+                send_response_email(request, contact, response)
+                return redirect(reverse('home'))
+            else:
+                messages.error(request, "Failed to send message.\
+                                Please ensure the form is valid.")
         else:
-            messages.error(request, "Failed to send message.\
-                            Please ensure the form is valid.")
+            form = ResponseForm()
     else:
-        form = ResponseForm()
+        messages.error(request, "Response already sent to this enquiry.")
+        return redirect(reverse('home'))
 
     template = 'contact/send_response.html'
     context = {
