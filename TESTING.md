@@ -515,6 +515,16 @@ Pylance used during development to detect errors and PEP8 compliance, but code a
 <img src="documentation/lighthouse_reports/contact-lighthouse.png">
 </details>
 <details>
+<summary>Enquiries - Scores above 90.</summary>
+<br>
+<img src="documentation/lighthouse_reports/enquiries-lighthouse.png">
+</details>
+<details>
+<summary>Send Response - Scores above 90.</summary>
+<br>
+<img src="documentation/lighthouse_reports/send-response-lighthouse.png">
+</details>
+<details>
 <summary>Profile - Scores above 90.</summary>
 <br>
 <img src="documentation/lighthouse_reports/profile-lighthouse.png">
