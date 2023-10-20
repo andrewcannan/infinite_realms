@@ -104,6 +104,7 @@ def send_response(request, contact_id):
 
         if form.is_valid():
             response = form.save(commit=False)
+            response.contact = contact
             response.save()
             # switch boolean field on contact to true
             contact.response_sent = True
