@@ -1,4 +1,4 @@
-Dear {{ contact.username }},
+Dear {{ contact.user.username }},
 
 We hope this message finds you well.
 
