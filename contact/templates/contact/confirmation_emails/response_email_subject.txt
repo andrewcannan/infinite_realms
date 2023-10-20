@@ -1,1 +1,1 @@
-Re: Your Inquiry - {{ contact.reason }}
+Re: Your Inquiry - {{ contact.reason.capitalize }}
