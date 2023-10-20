@@ -25,14 +25,14 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+        <div class="col-12 col-lg-10 offset-lg-1">
             {% if sent_messages %}
                 <div class="table-responsive">
                     <table class="table table-sm table-borderless">
                         <thead>
                             <tr>
                                 <th>User</th>
-                                <th>Date</th>
+                                <th class="d-none d-md-block">Date</th>
                                 <th>Email</th>
                                 <th>Subject</th>
                                 <th>Reply</th>
@@ -42,9 +42,9 @@
                             {% for message in sent_messages %}
                             <tr>
                                 <td>{{ message.user}}</td>
-                                <td>{{message.created_at }}</td>
+                                <td class="d-none d-md-block">{{message.created_at }}</td>
                                 <td>{{ message.email }}</td>
-                                <td>£{{ message.reason }}</td>
+                                <td>{{ message.reason.capitalize }}</td>
                                 <td><a class="btn btn-black rounded-0" href="">Reply</a></td>
                             </tr>
                             {% endfor %}
