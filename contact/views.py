@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.core.mail import send_mail
@@ -97,8 +97,8 @@ def send_response(request, contact_id):
         messages.error(request,
                        'Sorry, you do not have the required permissions.')
         return redirect(reverse('home'))
-
-    contact = Contact.objects.filter(id=contact_id)
+    print('contact_id:', contact_id)
+    contact = get_object_or_404(Contact, pk=contact_id)
     if request.method == "POST":
         form = ResponseForm(request.POST)
 
