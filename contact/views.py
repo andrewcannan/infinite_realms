@@ -89,6 +89,8 @@ def send_response_email(request, contact, response):
 def send_response(request, contact_id):
     """
     A view to render response form and handle form submission
+    - Params:
+        int: contact_id
     """
     if not request.user.is_superuser:
         messages.error(request,
