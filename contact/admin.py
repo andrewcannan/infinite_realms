@@ -9,7 +9,7 @@ class ResponseAdminInline(admin.TabularInline):
     model = Response
 
 
-class ResponseAdminInline(admin.ModelAdmin):
+class ContactAdmin(admin.ModelAdmin):
     """
     Class extends djangos ModelAdmin class
     """
