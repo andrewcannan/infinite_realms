@@ -103,6 +103,16 @@ All pages tested for  HTML Validation at [W3C markup validation service](https:/
 <img src="documentation/html_validation/profile-html-validation.png">
 </details>
 <details>
+<summary>Enquiries</summary>
+<br>
+<img src="documentation/html_validation/enquiries-html-validation.png">
+</details>
+<details>
+<summary>Send Response</summary>
+<br>
+<img src="documentation/html_validation/send-response-html-validation.png">
+</details>
+<details>
 <summary>404</summary>
 <br>
 <img src="documentation/html_validation/404-html-validation.png">
