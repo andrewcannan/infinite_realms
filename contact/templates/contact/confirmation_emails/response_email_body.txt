@@ -1,0 +1,28 @@
+Dear {{ contact.username }},
+
+We hope this message finds you well.
+
+We wanted to personally follow up on your recent inquiry. We greatly appreciate your interest and the time you've taken to reach out to us.
+
+Here are the details of your message:
+
+
+Subject: {{ contact.reason.capitalize }}
+
+Message:
+{{ contact.content }}
+
+
+After careful consideration, we're pleased to provide you with the following response:
+
+
+{{ response.message }}
+
+
+If you have any further questions or require additional assistance, please don't hesitate to let us know. We're here to help!
+
+Once again, thank you for considering Infinite Realms. We value your feedback and look forward to serving you.
+
+Best regards,
+
+Infinite Realms
