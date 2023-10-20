@@ -1,11 +1,20 @@
 from django.contrib import admin
-from .models import Contact
+from .models import Contact, Response
 
 
-class ContactAdmin(admin.ModelAdmin):
+class ResponseAdminInline(admin.TabularInline):
+    """
+    Class extends djangos TabularInline class
+    """
+    model = Response
+
+
+class ResponseAdminInline(admin.ModelAdmin):
     """
     Class extends djangos ModelAdmin class
     """
+    inlines = (ResponseAdminInline,)
+
     readonly_fields = ('user', 'email', 'reason',
                        'content', 'created_at',)
 
