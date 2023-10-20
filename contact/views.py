@@ -131,3 +131,23 @@ def send_response(request, contact_id):
         'contact': contact,
     }
     return render(request, template, context)
+
+
+def enquiries(request):
+    """
+    A view to display unresponded contact form submissions
+    """
+    if not request.user.is_superuser:
+        messages.error(request,
+                       'Sorry, you do not have the required permissions.')
+        return redirect(reverse('home'))
+
+    sent_messages = Contact.objects.filter(response_sent=False).order_by(
+        'created_at')
+
+    template = 'contact/enquiries.html'
+    context = {
+        'sent_messages': sent_messages,
+    }
+
+    return render(request, template, context)
