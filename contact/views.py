@@ -6,6 +6,7 @@ from django.template.loader import render_to_string
 from django.conf import settings
 
 from .forms import ContactForm, ResponseForm
+from .models import Contact, Response
 
 
 @login_required
@@ -97,7 +98,7 @@ def send_response(request, contact_id):
                        'Sorry, you do not have the required permissions.')
         return redirect(reverse('home'))
 
-    contact = Contact.objects.get(id=contact_id)
+    contact = Contact.objects.filter(id=contact_id)
     if request.method == "POST":
         form = ResponseForm(request.POST)
 
