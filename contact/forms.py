@@ -38,8 +38,8 @@ class ResponseForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
 
-        if self.fields['content']:
-            self.fields['content'].widget.attrs['placeholder'] = (
+        if self.fields['message']:
+            self.fields['message'].widget.attrs['placeholder'] = (
                 'Send Response to user.')
 
         for field_name, field in self.fields.items():
