@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font mb-4">Enquries</h2>
+            <p class="h5 text-muted">Contact Form Submissions that need responding to.</p>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+            {% if sent_messages %}
+                <div class="table-responsive">
+                    <table class="table table-sm table-borderless">
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Date</th>
+                                <th>Email</th>
+                                <th>Subject</th>
+                                <th>Reply</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for message in sent_messages %}
+                            <tr>
+                                <td>{{ message.user}}</td>
+                                <td>{{message.created_at }}</td>
+                                <td>{{ message.email }}</td>
+                                <td>£{{ message.reason }}</td>
+                                <td><a class="btn btn-black rounded-0" href="">Reply</a></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% else %}
+                <p class="text-center">No unresponded messages to respond to display.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
