@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <hr>
+                <h2 class="logo-font mb-4">Send Response</h2>
+                <p class="h5 text-muted">Send a message to user: {{ contact.username }} in response to their contact form submission.</p>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6 order-md-last">
+                <p class="h5 logo-font mb-4">Contact Form Details</p>
+                <p class="h5 text-muted">User: {{ contact.user.username }}</p>
+                <p class="h5 text-muted">Email: {{ contact.email }}</p>
+                <p class="h5 text-muted">Subject: {{ contact.reason.capitalize }}</p>
+                <p class="h5 text-muted">Message: {{ contact.content }}</p>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <form method="POST" action="{% url 'send_response' contact.id %}" class="form mb-2">
+                    {% csrf_token %}
+                    {% for field in form %}
+                            {{ field | as_crispy_field }}
+                    {% endfor %}
+                    <div class="text-right">
+                        <a class="btn btn-outline-black rounded-0" href="">Cancel</a>
+                        <button class="btn btn-black rounded-0" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>    
+        </div>
+    </div>
+{% endblock %}
