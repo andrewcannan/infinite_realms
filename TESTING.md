@@ -18,8 +18,9 @@
     * [Python Validation](#python-validation)
     * [Lighthouse Reports](#lighthouse-report)
     * [WAVE Accessibility](#wave-accessibility-checker)
+* [User Story Testing](#user-story-testing)
 * [Manual Testing](#manual-testing)
-    * [User Story Testing](#user-story-testing)
+* [Responsiveness](#responsiveness)
 <br><br>
 
 ----------------
@@ -641,10 +642,8 @@ Pylance used during development to detect errors and PEP8 compliance, but code a
 </details>
 <br><br>
 
-## Manual Testing
+## User Story Testing
 <br><br>
-
-### User Story Testing
 
 | \*\*USER STORY #\*\*                 | \*\*As a/an\*\* | \*\*I want to be able to...\*\*                                                          | \*\*So that I can...\*\*                                                                  | Feature to achieve this                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | ScreenShots |
 | ------------------------------------ | --------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
@@ -693,3 +692,189 @@ Pylance used during development to detect errors and PEP8 compliance, but code a
 | 36                                   | Store Owner     | Remove products from the store.                                                          | Remove items that are no longer available for sale from the inventory.                    | An authenticated store owner or admin possesses the capability to remove a product directly from the store. This can be accomplished by utilizing the "Delete Product" button, which is conspicuously located on both the product detail page and individual product cards. It is important to note that this button is exclusively visible to authenticated store owners and administrators.<br>Upon selecting the "Delete Product" button, a modal window appears, prompting the user to confirm the deletion. This precautionary measure is implemented to prevent accidental removals. Within the modal, two options are presented: "Cancel" and "Delete." This enables the user to either proceed with the deletion or abort the action.<br>This feature serves as a safeguard against inadvertent product removals, ensuring that such actions are deliberate and intentional.                                                           |    [Delete Product Link on Product card](documentation/user_story_testing/user-story-test-36-delete-button-product-card.png), [Delete Product Link in Product Details](documentation/user_story_testing/user-story-test-36-delete-button-product-detail.png), [Defensive Delete Modal](documentation/user_story_testing/user-story-test-36-delete-modal.png)         |
 | 37                                   | Store Owner     | See all unresponded messages from users.                                                 | Respond to users in a timely manner.                                                      | Alongside the "Product Management" option in the dropdown menu for store owners, there is an additional "Enquiries" link. Clicking on this link directs the user to a dedicated page where they can view a table containing all unresponded contact form submissions. This table provides a structured overview of the inquiries that have yet to receive a response, allowing for efficient management and timely follow-ups.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |     [Enquiries Link](documentation/user_story_testing/user-story-test-37-navlink.png), [Contact Form Submissions Table](documentation/user_story_testing/user-story-test-37-response-table.png)        |
 | 38                                   | Store Owner     | Have an easy to user interface to respond to enquiries and see details of the enquiries. | Respond to users enquiries with a detailed response.                                      | Each unresponded message listed in the table includes a "Reply" button. Clicking on this button redirects the store owner to a dedicated page displaying the details of the form submission made by the store user. Additionally, on this page, there is a text area provided for the store owner to compose and send a response message.<br>Upon submitting this response form, an email is automatically generated and sent to the shopper. This email contains the response message from the store owner, facilitating seamless and efficient communication between the two parties. This feature ensures that users receive timely and personalized responses to their inquiries.                                                                                                                                                                                                                                                          |    [Response Form](documentation/user_story_testing/user-story-test-38-response-form.png), [Success Notification](documentation/user_story_testing/user-story-test-38-toast-notification.png), [Response Email](documentation/user_story_testing/user-story-test-38-email-response.png)       |
+<br><br>
+
+## Manual Testing
+<br><br>
+
+## Responsiveness
+<br><br>
+
+Tested across various devices using Google Dev Tools and real world devices for expected look and layout. 
+
+<details>
+<summary>Samsung S22 Ultra</summary>
+<br>
+
+| Device | Page | Result |
+| ----------- | ----------- |---------------- |
+| Samsung S22 Ultra| Homepage | &check; |
+| | Products | &check; |
+| | Product Detail | &check; |
+| | Add Product | &check; |
+| | Edit Product | &check; |
+| | Add Review | &check; |
+| | Edit Review | &check; |
+| | Bag | &check; |
+| | Checkout | &check; |
+| | Checkout Success | &check; |
+| | Register | &check; |
+| | Login | &check; |
+| | Logout | &check; |
+| | Contact | &check; |
+| | Profile | &check; |
+| | Enquiries | &check; |
+| | Send Response | &check; |
+| | 404 | &check; |
+</details>
+<details>
+<summary>IPhone 12 Pro</summary>
+<br>
+
+| Device | Page | Result |
+| ----------- | ----------- |---------------- |
+| IPhone 12 Pro| Homepage | &check; |
+| | Products | &check; |
+| | Product Detail | &check; |
+| | Add Product | &check; |
+| | Edit Product | &check; |
+| | Add Review | &check; |
+| | Edit Review | &check; |
+| | Bag | &check; |
+| | Checkout | &check; |
+| | Checkout Success | &check; |
+| | Register | &check; |
+| | Login | &check; |
+| | Logout | &check; |
+| | Contact | &check; |
+| | Profile | &check; |
+| | Enquiries | &check; |
+| | Send Response | &check; |
+| | 404 | &check; |
+</details>
+<details>
+<summary>IPhone 6/7/8</summary>
+<br>
+
+| Device | Page | Result |
+| ----------- | ----------- |---------------- |
+| IPhone 6/7/8| Homepage | &check; |
+| | Products | &check; |
+| | Product Detail | &check; |
+| | Add Product | &check; |
+| | Edit Product | &check; |
+| | Add Review | &check; |
+| | Edit Review | &check; |
+| | Bag | &check; |
+| | Checkout | &check; |
+| | Checkout Success | &check; |
+| | Register | &check; |
+| | Login | &check; |
+| | Logout | &check; |
+| | Contact | &check; |
+| | Profile | &check; |
+| | Enquiries | &check; |
+| | Send Response | &check; |
+| | 404 | &check; |
+</details>
+<details>
+<summary>IPad Pro 2</summary>
+<br>
+
+| Device | Page | Result |
+| ----------- | ----------- |---------------- |
+| IPad Pro 2| Homepage | &check; |
+| | Products | &check; |
+| | Product Detail | &check; |
+| | Add Product | &check; |
+| | Edit Product | &check; |
+| | Add Review | &check; |
+| | Edit Review | &check; |
+| | Bag | &check; |
+| | Checkout | &check; |
+| | Checkout Success | &check; |
+| | Register | &check; |
+| | Login | &check; |
+| | Logout | &check; |
+| | Contact | &check; |
+| | Profile | &check; |
+| | Enquiries | &check; |
+| | Send Response | &check; |
+| | 404 | &check; |
+</details>
+<details>
+<summary>Nest Hub</summary>
+<br>
+
+| Device | Page | Result |
+| ----------- | ----------- |---------------- |
+| Nest Hub| Homepage | &check; |
+| | Products | &check; |
+| | Product Detail | &check; |
+| | Add Product | &check; |
+| | Edit Product | &check; |
+| | Add Review | &check; |
+| | Edit Review | &check; |
+| | Bag | &check; |
+| | Checkout | &check; |
+| | Checkout Success | &check; |
+| | Register | &check; |
+| | Login | &check; |
+| | Logout | &check; |
+| | Contact | &check; |
+| | Profile | &check; |
+| | Enquiries | &check; |
+| | Send Response | &check; |
+| | 404 | &check; |
+</details>
+<details>
+<summary>Samsung Galaxy A51/71</summary>
+<br>
+
+| Device | Page | Result |
+| ----------- | ----------- |---------------- |
+| Samsung Galaxy A51/71| Homepage | &check; |
+| | Products | &check; |
+| | Product Detail | &check; |
+| | Add Product | &check; |
+| | Edit Product | &check; |
+| | Add Review | &check; |
+| | Edit Review | &check; |
+| | Bag | &check; |
+| | Checkout | &check; |
+| | Checkout Success | &check; |
+| | Register | &check; |
+| | Login | &check; |
+| | Logout | &check; |
+| | Contact | &check; |
+| | Profile | &check; |
+| | Enquiries | &check; |
+| | Send Response | &check; |
+| | 404 | &check; |
+</details>
+<details>
+<summary>Surface Pro 7</summary>
+<br>
+
+| Device | Page | Result |
+| ----------- | ----------- |---------------- |
+| Surface Pro 7| Homepage | &check; |
+| | Products | &check; |
+| | Product Detail | &check; |
+| | Add Product | &check; |
+| | Edit Product | &check; |
+| | Add Review | &check; |
+| | Edit Review | &check; |
+| | Bag | &check; |
+| | Checkout | &check; |
+| | Checkout Success | &check; |
+| | Register | &check; |
+| | Login | &check; |
+| | Logout | &check; |
+| | Contact | &check; |
+| | Profile | &check; |
+| | Enquiries | &check; |
+| | Send Response | &check; |
+| | 404 | &check; |
+</details>
+<br><br>
