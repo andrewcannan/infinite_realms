@@ -13,13 +13,15 @@
                         </div>
                     {% endif %}
                     <hr class="w-50 mb-4">
-                    <div class="rating">
-                        {% for i in range(review.rating) %}
-                            <span class="star">★</span>
+                    <div class="rating mb-4">
+                        {% for i in '123456'|make_list %}
+                            {% if i|add:0 <= review.rating %}
+                                <span>★</span>
+                            {% else %}
+                                <span>☆</span>
+                            {% endif %}
                         {% endfor %}
-                        {% for i in range(5 - review.rating) %}
-                            <span class="star">☆</span>
-                        {% endfor %}
+                        
                     </div>
                     <p>{{ review.content }}</p>
                     <hr class="w-50 mb-4">
