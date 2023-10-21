@@ -113,6 +113,15 @@
                                     </div>
                                     
                                     <hr class="w-50 mb-4">
+                                <div class="rating mb-4">
+                                    {% for i in '12345'|make_list %}
+                                        {% if i|add:0 <= review.rating %}
+                                            <span>★</span>
+                                        {% else %}
+                                            <span>☆</span>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
                                     <p>{{ review.content }}</p>
                                     <hr class="w-50 mb-4">
                                 </div>
