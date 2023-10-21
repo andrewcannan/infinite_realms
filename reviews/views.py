@@ -25,7 +25,6 @@ def reviews(request, product_id):
     return render(request, template, context)
 
 
-@login_required
 def add_review(request, product_id):
     """
     A view to render form and handle form submission.
@@ -66,7 +65,6 @@ def add_review(request, product_id):
     return render(request, template, context)
 
 
-@login_required
 def edit_review(request, review_id):
     """
     A view to render form and handle form submission.
@@ -114,7 +112,6 @@ def edit_review(request, review_id):
     return render(request, template, context)
 
 
-@login_required
 def delete_review(request, review_id):
     """
     Delete a review

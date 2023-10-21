@@ -9,7 +9,6 @@ from .forms import ContactForm, ResponseForm
 from .models import Contact, Response
 
 
-@login_required
 def send_confirmation_email(request, contact):
     """
     Send the user a confirmation email
@@ -29,7 +28,6 @@ def send_confirmation_email(request, contact):
     )
 
 
-@login_required
 def contact_us(request):
     """
     A view to render contact form and handle form submission
@@ -65,7 +63,6 @@ def contact_us(request):
     return render(request, template, context)
 
 
-@login_required
 def send_response_email(request, contact, response):
     """
     Send the user a response email
@@ -86,7 +83,6 @@ def send_response_email(request, contact, response):
     )
 
 
-@login_required
 def send_response(request, contact_id):
     """
     A view to render response form and handle form submission
