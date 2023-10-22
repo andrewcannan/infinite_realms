@@ -22,7 +22,7 @@
         </div>
 
         <div class="row">
-            <div class="col-12 col-md-6 order-md-last pl-5">
+            <div class="col-12 col-md-6 order-md-last pl-md-5">
                 <p class="h5 logo-font mb-4">Contact Form Details</p>
                 <p class="text-muted">User: {{ contact.user.username }}</p>
                 <p class="text-muted">Email: {{ contact.email }}</p>
@@ -37,7 +37,7 @@
                             {{ field | as_crispy_field }}
                     {% endfor %}
                     <div class="text-right">
-                        <a class="btn btn-outline-black rounded-0" href="">Cancel</a>
+                        <a class="btn btn-outline-black rounded-0" href="{% url 'enquiries' %}">Cancel</a>
                         <button class="btn btn-black rounded-0" type="submit">Submit</button>
                     </div>
                 </form>
