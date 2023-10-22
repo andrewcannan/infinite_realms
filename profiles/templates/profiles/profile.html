@@ -105,7 +105,8 @@
                             {% for review in reviews %}
                             <div class="row mb-3">
                                 <div class="col-10 offset-1 text-center">
-                                    <h3 class="logo-font text-black">{{review.title}}</h3>
+                                    <p class="h5 logo-font text-black">{{review.title}}</p>
+                                    <p><small class="text-muted">For: {{ review.product.name }}</small>
                                     <p><small class="text-muted">By {{ review.user}} on {{review.created_at}}</small>
                                     </p>
                                     
