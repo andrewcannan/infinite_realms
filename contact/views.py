@@ -119,7 +119,7 @@ def send_response(request, contact_id):
             form = ResponseForm()
     else:
         messages.error(request, "Response already sent to this enquiry.")
-        return redirect(reverse('home'))
+        return redirect(reverse('enquiries'))
 
     template = 'contact/send_response.html'
     context = {
