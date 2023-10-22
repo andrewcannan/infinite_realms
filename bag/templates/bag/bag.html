@@ -125,8 +125,8 @@
     // Update quantity on click
     $('.update-link').click(function(e) {
         let form = $(this).prev('.update-form');
-        form.submit();
-    });
+            form[0].requestSubmit();
+        });
 
     // Remove item and reload on click
     $('.remove-item').click(function(e) {
