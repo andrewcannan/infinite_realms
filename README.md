@@ -17,6 +17,8 @@ This website was created as the 4th Milestone Project for Code Institute's web a
     * [Shoppers Goals](#shoppers-goals)
 * [Design](#design)
     * [User Stories](#user-stories)
+    * [WireFrames](#wireframes)
+    * [Database Schema](#database-schema)
 
 <br><br>
 
@@ -283,4 +285,11 @@ Wireframes created using balsamiq.
 <br>
 <img src="documentation/wireframes/404-mobile-wireframe.png">
 </details>
+<br><br>
+
+### Database Schema
+
+Schema to show tables in database along with thier relation to each other, also included is the allauth-user schema to show custom tables realationship.
+
+<img src="documentation/db_schema/db-schema.png">
 <br><br>
