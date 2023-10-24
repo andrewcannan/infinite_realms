@@ -24,6 +24,7 @@ This website was created as the 4th Milestone Project for Code Institute's web a
     * [Multi-Page Features](#mutli-page-features)
     * [Homepage](#homepage)
     * [Products Page](#products)
+    * [Product Details Page](#product-details-page)
 
 <br><br>
 
@@ -578,3 +579,11 @@ The Products Page dynamically showcases products sourced from the database, cont
 </details>
 <br><br>
 
+6. Edit and Delete Links: Additional options available on product details page to shop owners or administrators. These links are located undernath the product name and allow for administrative actions to be performed on the product.
+
+<details>
+<summary>Edit and Delete Links</summary>
+<br>
+<img src="documentation/readme_images/edit-delete-product-details.png">
+</details>
+<br><br>
