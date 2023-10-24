@@ -573,7 +573,7 @@ The Products Page dynamically showcases products sourced from the database, cont
 <img src="documentation/readme_images/reviews-collapsed.png">
 </details>
 <details>
-<summary><summary>Reviews Section - Expanded</summary>
+<summary>Reviews Section - Expanded</summary>
 <br>
 <img src="documentation/readme_images/reviews-expanded.png">
 </details>
@@ -585,5 +585,83 @@ The Products Page dynamically showcases products sourced from the database, cont
 <summary>Edit and Delete Links</summary>
 <br>
 <img src="documentation/readme_images/edit-delete-product-details.png">
+</details>
+<br><br>
+
+### Bag page
+
+The Bag page enhances the overall shopping experience by giving users control over their selections, enabling them to review and modify their choices, and providing transparent cost information.
+
+<details>
+<summary>Bag - Desktop</summary>
+<br>
+<img src="documentation/readme_images/product-details-desktop.png">
+</details>
+<details>
+<summary>Bag - Mobile</summary>
+<br>
+<img src="documentation/readme_images/product-details-mobile.png">
+</details>
+<br><br>
+
+ **Bag Page Components**
+ 
+ 1. Product Information Section:
+
+* Product Image: Displays a visual representation of the product, providing users with a clear visual reference.
+
+* Product Name: Identifies the name or title of the product, ensuring easy recognition.
+
+* Product SKU: Provides a unique identifier for the product, aiding in inventory management.
+
+* Product Price per Unit: Indicates the cost of a single unit of the product, allowing users to understand the pricing structure.
+
+* Quantity Input Box: Allow users to increment or decrement the quantity of the product in their shopping bag, facilitating easy adjustments.
+
+* Update Button: Enables users to update the quantity of the product currently in the bag, providing flexibility in their shopping choices.
+
+* Remove Button: Allows users to remove the product from the bag if they decide not to proceed with the purchase.
+
+* Sub-Total per Item: Displays the total cost for each individual product based on the quantity selected.
+
+<details>
+<summary>Product Information Section - Desktop</summary>
+<br>
+<img src="documentation/readme_images/product-details-mobile.png">
+</details>
+<details>
+<summary>Product Information Section - Mobile</summary>
+<br>
+<img src="documentation/readme_images/product-details-mobile.png">
+</details>
+<br><br>
+
+2. Bag Summary:
+
+* Bag Total: Reflects the cumulative cost of all the items currently in the shopping bag.
+
+* Delivery Cost: Indicates any associated delivery charges.
+
+* Grand Total: Provides the total cost of all products in the shopping bag, including both product costs and any applicable delivery charges.
+
+* Free Delivery Threshold Alert: If the grand total is below the free delivery threshold, a prominent text in red advises the shopper how much more they need to spend to qualify for free delivery.
+
+<details>
+<summary>Bag Summary</summary>
+<br>
+<img src="documentation/readme_images/product-details-mobile.png">
+</details>
+<br><br>
+
+3. Shopping Bag Buttons:
+
+Keep Shopping CTA: A button that redirects the user back to the products page, allowing them to continue browsing and adding more items to their shopping bag.
+
+Secure Checkout: This button initiates the checkout process, leading the user to a secure page to complete their purchase.
+
+<details>
+<summary>Shopping Bag Buttons</summary>
+<br>
+<img src="documentation/readme_images/product-details-mobile.png">
 </details>
 <br><br>
