@@ -675,12 +675,12 @@ The Checkout Page plays a pivotal role in ensuring a smooth and secure transitio
 <details>
 <summary>Checkout - Desktop</summary>
 <br>
-<img src="documentation/readme_images/bag-buttons.png">
+<img src="documentation/readme_images/checkout-desktop.png">
 </details>
 <details>
 <summary>Checkout - Mobile</summary>
 <br>
-<img src="documentation/readme_images/bag-buttons.png">
+<img src="documentation/readme_images/checkout-mobile.png">
 </details>
 <br><br>
 
@@ -707,7 +707,7 @@ The Checkout Page plays a pivotal role in ensuring a smooth and secure transitio
 <details>
 <summary>Order Form</summary>
 <br>
-<img src="documentation/readme_images/bag-buttons.png">
+<img src="documentation/readme_images/checkout-order-form.png">
 </details>
 <br><br>
 
@@ -728,7 +728,7 @@ If the Grand Total is below the free delivery threshold, a red text warning will
 <details>
 <summary>Order Summary</summary>
 <br>
-<img src="documentation/readme_images/bag-buttons.png">
+<img src="documentation/readme_images/checkout-order-summary.png">
 </details>
 <br><br>
 
@@ -741,7 +741,7 @@ If the Grand Total is below the free delivery threshold, a red text warning will
 <details>
 <summary>Checkout Buttons</summary>
 <br>
-<img src="documentation/readme_images/bag-buttons.png">
+<img src="documentation/readme_images/checkout-buttons.png">
 </details>
 <br><br>
 
@@ -754,6 +754,11 @@ If the user is logged in, a checkbox option is available to add this delivery in
 <details>
 <summary>User Authentication Links and Profile Integration</summary>
 <br>
-<img src="documentation/readme_images/bag-buttons.png">
+<img src="documentation/readme_images/checkout-user-authentication.png">
+</details>
+<details>
+<summary>User Authentication Links and Profile Integration</summary>
+<br>
+<img src="documentation/readme_images/checkout-profile-intergration.png">
 </details>
 <br><br>
