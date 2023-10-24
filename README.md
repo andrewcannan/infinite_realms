@@ -518,12 +518,12 @@ The Products Page dynamically showcases products sourced from the database, cont
 <details>
 <summary>Product Details - Desktop</summary>
 <br>
-<img src="documentation/readme_images/edit-delete-links.png">
+<img src="documentation/readme_images/product-details-desktop.png">
 </details>
 <details>
 <summary>Product Details - Mobile</summary>
 <br>
-<img src="documentation/readme_images/edit-delete-links.png">
+<img src="documentation/readme_images/product-details-mobile.png">
 </details>
 <br><br>
 
@@ -542,7 +542,7 @@ The Products Page dynamically showcases products sourced from the database, cont
 <details>
 <summary>Product Image and Information</summary>
 <br>
-<img src="documentation/readme_images/edit-delete-links.png">
+<img src="documentation/readme_images/product-image-description.png">
 </details>
 <br><br>
 
@@ -551,7 +551,7 @@ The Products Page dynamically showcases products sourced from the database, cont
 <details>
 <summary>Quantity Input Box</summary>
 <br>
-<img src="documentation/readme_images/edit-delete-links.png">
+<img src="documentation/readme_images/quantity-input.png">
 </details>
 <br><br>
 
@@ -560,21 +560,21 @@ The Products Page dynamically showcases products sourced from the database, cont
 <details>
 <summary>"Keep Shopping" and "Add to Bag" Buttons</summary>
 <br>
-<img src="documentation/readme_images/edit-delete-links.png">
+<img src="documentation/readme_images/product-details-buttons.png">
 </details>
 <br><br>
 
-5. Reviews Section (Hidden by JS Click to Reveal): Conceals the reviews section by default, providing a cleaner interface. Users can choose to reveal the reviews by clicking on the heading, providing additional feedback and insights about the product. Revealing reviews section also enables the user to submit a review about the product by reavealing the "Add Review" Button. Ability to add reviews is limited to authenticated users.
+5. Reviews Section (Hidden by JS Click to Reveal): Conceals the reviews section by default, providing a cleaner interface. Users can choose to reveal the reviews by clicking on the heading, providing additional feedback and insights about the product. Revealing reviews section also enables the user to submit a review about the product by reavealing the "Leave a Review" Button. Ability to add reviews is limited to authenticated users.
 
 <details>
 <summary>Reviews Section - Collapsed</summary>
 <br>
-<img src="documentation/readme_images/edit-delete-links.png">
+<img src="documentation/readme_images/reviews-collapsed.png">
 </details>
 <details>
 <summary><summary>Reviews Section - Expanded</summary>
 <br>
-<img src="documentation/readme_images/edit-delete-links.png">
+<img src="documentation/readme_images/reviews-expanded.png">
 </details>
 <br><br>
 
