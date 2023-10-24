@@ -415,3 +415,101 @@ The homepage has a minimalist design, featuring a tagline that encapsulates the 
 <img src="documentation/readme_images/homepage-mobile.png">
 </details>
 <br><br>
+
+### Products
+
+The Products Page dynamically showcases products sourced from the database, contingent upon selected filtering options including category, subcategory and search terms.
+
+<details>
+<summary>Products - Desktop</summary>
+<br>
+<img src="documentation/readme_images/homepage-desktop.png">
+</details>
+<details>
+<summary>Products - Mobile</summary>
+<br>
+<img src="documentation/readme_images/homepage-mobile.png">
+</details>
+<br><br>
+
+ **Products Page Components**
+
+ 1. Heading Display: This section prominently displays either "All Products" or the name of the currently selected category, providing users with clear context regarding the displayed products.
+
+<details>
+<summary>All Products Heading</summary>
+<br>
+<img src="documentation/readme_images/homepage-mobile.png">
+</details>
+<details>
+<summary>Category Heading</summary>
+<br>
+<img src="documentation/readme_images/homepage-mobile.png">
+</details>
+<br><br>
+
+2. Subcategory Buttons: Located beneath the heading, these buttons represent subcategories within the selected category (if one selected). The currently selected subcategory has differing styling, providing users with clear navigation cues.
+
+<details>
+<summary>Statues Subcategory</summary>
+<br>
+<img src="documentation/readme_images/homepage-mobile.png">
+</details>
+<details>
+<summary>Soft & Plush Subcategory</summary>
+<br>
+<img src="documentation/readme_images/homepage-mobile.png">
+</details>
+<br><br>
+
+3. Products Information: Positioned below the sort selector on mobile and to the left of the page on desktop, this paragraph provides users with essential information. It includes details such as the total number of products available and any active search terms.
+
+<details>
+<summary>Products Information - Desktop</summary>
+<br>
+<img src="documentation/readme_images/homepage-mobile.png">
+</details>
+<details>
+<summary>Products Information - Mobile</summary>
+<br>
+<img src="documentation/readme_images/homepage-mobile.png">
+</details>
+<br><br>
+
+4. Sort Selector: A dropdown menu located near the top of the page, allowing users to sort products based on various criteria such as price, name, manufacturer, category, and subcategory.
+
+<details>
+<summary>Sort Selector - Desktop</summary>
+<br>
+<img src="documentation/readme_images/homepage-mobile.png">
+</details>
+<details>
+<summary>Sort Selector - Mobile</summary>
+<br>
+<img src="documentation/readme_images/homepage-mobile.png">
+</details>
+<br><br>
+
+5. Product Cards: Each product is displayed in an individual card format. Cards are arranged in coloum amounts suitable for screen size of the user. The card includes:
+
+* Product Image: Clickable and serves as a direct link to the product's detail page, providing users with a visual representation of the product.
+* Product Name: Clearly states the name of the product.
+* Manufacturer: Displays the name of the manufacturer or publisher responsible for producing the product.
+* Price: Indicates the cost of the product.
+* Category and Subcategory: Specifies the specific category and subcategory to which the product belongs redirects to a view of products filtered by relevant category or subcategory.
+
+<details>
+<summary>Product Card</summary>
+<br>
+<img src="documentation/readme_images/homepage-mobile.png">
+</details>
+<br><br>
+
+6. Edit and Delete Links: Additional options available on product cards to shop owners or administrators. These links allow for administrative actions to be performed on the product.
+
+<details>
+<summary>Edit and Delete Links</summary>
+<br>
+<img src="documentation/readme_images/homepage-mobile.png">
+</details>
+<br><br>
