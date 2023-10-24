@@ -368,3 +368,23 @@ Overall, the footer serves as a well-structured and informative section, enhanci
 <img src="documentation/readme_images/footer-mobile.png">
 </details>
 <br><br>
+
+#### Modal
+
+The inclusion of modals is a deliberate design choice implemented in scenarios where a delete action is initiated by the user. This feature serves as a protective measure to mitigate the risk of accidental deletions.
+
+When a user clicks on a delete button, a modal window is triggered, prompting the user to confirm their intention to proceed with the deletion. This additional step acts as a safeguard, providing users with a final opportunity to reconsider before committing to the action.
+
+By incorporating modals in this context, the website prioritizes user experience and safety, ensuring that critical operations, such as deletions, are deliberate and intentional, thereby reducing the likelihood of unintended consequences.
+
+<details>
+<summary>Modal - Delete Product</summary>
+<br>
+<img src="documentation/readme_images/footer-desktop.png">
+</details>
+<details>
+<summary>Modal - Delete Review</summary>
+<br>
+<img src="documentation/readme_images/footer-mobile.png">
+</details>
+<br><br>
