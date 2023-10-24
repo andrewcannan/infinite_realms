@@ -19,6 +19,9 @@ This website was created as the 4th Milestone Project for Code Institute's web a
     * [User Stories](#user-stories)
     * [WireFrames](#wireframes)
     * [Database Schema](#database-schema)
+    * [Styling](#styling)
+* [Feautres](#features)
+    * [Multi-Page Features](#mutli-page-features)
 
 <br><br>
 
@@ -311,34 +314,34 @@ Schema to show tables in database along with thier relation to each other, also 
 
  #### Navbar
 
-The website's navigation comprises two key elements: the top navigation and the main navigation. The top navigation, depicted below, features essential functionalities. Visitors can access the site's logo, conduct product searches using the search bar, and either sign up or log in via the "My Account" icon. Additionally, users can easily view the total number of items in their shopping bag. Once signed in, the options available in the "My Account" dropdown menu vary based on the user's level. Shop Owners/Administrators have access to "Product Management" and "Enquiries", while shoppers can navigate to "My Profile" or "Contact Us". Both user types possess the ability to log out from the "My Account" dropdown.
+The website's navigation comprises two key elements: the top navigation and the main navigation. The top navigation, depicted below, features essential functionalities. Visitors can access the site's logo, conduct product searches using the search bar, and either "Register" or "Login" via the "My Account" icon. Additionally, users can easily view the total number of items in their shopping bag. Once signed in, the options available in the "My Account" dropdown menu vary based on the user's level. Shop Owners/Administrators have access to "Product Management" and "Enquiries", while shoppers can navigate to "My Profile" or "Contact Us". Both user types possess the ability to log out from the "My Account" dropdown.
 
 The second component, the main navigation, empowers visitors to explore various product categories. This component is accessible through the hamburger icon on mobile devices. This navigation system and all of its constituent elements have been meticulously designed to be fully responsive, as exemplified by the accompanying screenshots.
 
 <details>
 <summary>Navbar - Desktop</summary>
 <br>
-<img src="eliteptpro/docs/readme-images/navbar-logged-out.png">
+<img src="documentation/readme_images/navbar-desktop.png">
 </details>
 <details>
 <summary>Navbar - Mobile</summary>
 <br>
-<img src="eliteptpro/docs/readme-images/navbar-member-logged-in.png">
+<img src="documentation/readme_images/navbar-mobile.png">
 </details>
 <details>
 <summary>My Account - Logged out</summary>
 <br>
-<img src="eliteptpro/docs/readme-images/navbar-trainer-logged-in.png">
+<img src="documentation/readme_images/my-account-logged-out.png">
 </details>
 <details>
 <summary>My Account - Shopper</summary>
 <br>
-<img src="eliteptpro/docs/readme-images/navbar-admin-logged-in.png">
+<img src="documentation/readme_images/my-account-shopper.png">
 </details>
 <details>
 <summary>My Account - Shop Owner/Administrator</summary>
 <br>
-<img src="eliteptpro/docs/readme-images/navbar-admin-logged-in.png">
+<img src="documentation/readme_images/my-account-admin.png">
 </details>
 
 This deliberate design ensures that visitors can seamlessly and intuitively navigate the site, regardless of their device or screen size, enhancing their overall browsing experience.
