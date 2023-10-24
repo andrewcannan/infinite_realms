@@ -425,12 +425,12 @@ The Products Page dynamically showcases products sourced from the database, cont
 <details>
 <summary>Products - Desktop</summary>
 <br>
-<img src="documentation/readme_images/homepage-desktop.png">
+<img src="documentation/readme_images/all-products-desktop.png">
 </details>
 <details>
 <summary>Products - Mobile</summary>
 <br>
-<img src="documentation/readme_images/homepage-mobile.png">
+<img src="documentation/readme_images/all-products-mobile.png">
 </details>
 <br><br>
 
@@ -441,12 +441,12 @@ The Products Page dynamically showcases products sourced from the database, cont
 <details>
 <summary>All Products Heading</summary>
 <br>
-<img src="documentation/readme_images/homepage-mobile.png">
+<img src="documentation/readme_images/all-products-heading.png">
 </details>
 <details>
 <summary>Category Heading</summary>
 <br>
-<img src="documentation/readme_images/homepage-mobile.png">
+<img src="documentation/readme_images/category-heading.png">
 </details>
 <br><br>
 
@@ -455,12 +455,12 @@ The Products Page dynamically showcases products sourced from the database, cont
 <details>
 <summary>Statues Subcategory</summary>
 <br>
-<img src="documentation/readme_images/homepage-mobile.png">
+<img src="documentation/readme_images/statues-subcategory.png">
 </details>
 <details>
 <summary>Soft & Plush Subcategory</summary>
 <br>
-<img src="documentation/readme_images/homepage-mobile.png">
+<img src="documentation/readme_images/soft-plush-subcategory.png">
 </details>
 <br><br>
 
@@ -469,26 +469,21 @@ The Products Page dynamically showcases products sourced from the database, cont
 <details>
 <summary>Products Information - Desktop</summary>
 <br>
-<img src="documentation/readme_images/homepage-mobile.png">
+<img src="documentation/readme_images/products-info-desktop.png">
 </details>
 <details>
 <summary>Products Information - Mobile</summary>
 <br>
-<img src="documentation/readme_images/homepage-mobile.png">
+<img src="documentation/readme_images/products-info-mobile.png">
 </details>
 <br><br>
 
 4. Sort Selector: A dropdown menu located near the top of the page, allowing users to sort products based on various criteria such as price, name, manufacturer, category, and subcategory.
 
 <details>
-<summary>Sort Selector - Desktop</summary>
+<summary>Sort Selector</summary>
 <br>
-<img src="documentation/readme_images/homepage-mobile.png">
-</details>
-<details>
-<summary>Sort Selector - Mobile</summary>
-<br>
-<img src="documentation/readme_images/homepage-mobile.png">
+<img src="documentation/readme_images/sort-selector.png">
 </details>
 <br><br>
 
@@ -503,7 +498,7 @@ The Products Page dynamically showcases products sourced from the database, cont
 <details>
 <summary>Product Card</summary>
 <br>
-<img src="documentation/readme_images/homepage-mobile.png">
+<img src="documentation/readme_images/product-card.png">
 </details>
 <br><br>
 
@@ -512,6 +507,6 @@ The Products Page dynamically showcases products sourced from the database, cont
 <details>
 <summary>Edit and Delete Links</summary>
 <br>
-<img src="documentation/readme_images/homepage-mobile.png">
+<img src="documentation/readme_images/edit-delete-links.png">
 </details>
 <br><br>
