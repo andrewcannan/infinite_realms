@@ -762,3 +762,47 @@ If the user is logged in, a checkbox option is available to add this delivery in
 <img src="documentation/readme_images/checkout-profile-intergration.png">
 </details>
 <br><br>
+
+### Checkout Success 
+
+After the successful processing of an order, the shopper is automatically redirected to the Checkout Success Page. This page provides a comprehensive receipt that includes the following details:
+
+<details>
+<summary>Checkout Success - Desktop</summary>
+<br>
+<img src="documentation/readme_images/checkout-success-desktop.png">
+</details>
+<details>
+<summary>Checkout Success - Mobile</summary>
+<br>
+<img src="documentation/readme_images/checkout-success-mobile.png">
+</details>
+<br><br>
+
+**Checkout Success Page Components**
+
+1. Order Information:
+
+* Order Number or Reference ID.
+
+* Order Details. Comprehensive information about each item in the order, including:
+    - Product Name
+    - Quantity
+    - Price per Unit
+    - Subtotal
+    - Delivery Information:
+
+* Details about where the order will be delivered, including:
+    - Address
+    - Any specific delivery instructions (if provided)
+    - Billing Information:
+
+* Summary of the billing details used for the transaction.
+
+2. Return to Products Button:
+
+This button allows the shopper to return to the Products Page, giving them the opportunity to explore more items or categories.
+
+3. Confirmation Email:
+
+A confirmation email is automatically sent to the user's provided email address. The email includes a summary of the order.
