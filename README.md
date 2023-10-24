@@ -26,6 +26,7 @@ This website was created as the 4th Milestone Project for Code Institute's web a
     * [Products Page](#products)
     * [Product Details Page](#product-details-page)
     * [Bag Page](#bag-page)
+    * [Checkout Page](#checkout-page)
 
 <br><br>
 
@@ -662,6 +663,96 @@ Secure Checkout: This button initiates the checkout process, leading the user to
 
 <details>
 <summary>Shopping Bag Buttons</summary>
+<br>
+<img src="documentation/readme_images/bag-buttons.png">
+</details>
+<br><br>
+
+### Checkout Page
+
+The Checkout Page plays a pivotal role in ensuring a smooth and secure transition from product selection to order confirmation. It provides users with the necessary tools and information to review, confirm, and successfully complete their purchase.
+
+<details>
+<summary>Checkout - Desktop</summary>
+<br>
+<img src="documentation/readme_images/bag-buttons.png">
+</details>
+<details>
+<summary>Checkout - Mobile</summary>
+<br>
+<img src="documentation/readme_images/bag-buttons.png">
+</details>
+<br><br>
+
+**Checkout Page Components**
+
+1. Order Form: Collects essential information from the user, including personal details, delivery address, and payment information. This ensures accurate processing and delivery of the order.
+
+* User Details:
+    - Full Name
+    - Email Address
+    - Phone Number
+
+* Delivery Information:
+    - Street Address Line 1
+    - Street Address Line 2 (Optional)
+    - Town/City
+    - County/Region (Optional)
+    - Country (Dropdown Selection)
+    - Postal Code
+
+* Payment Information:
+    - Card Information (Handled by Stripe)
+
+<details>
+<summary>Order Form</summary>
+<br>
+<img src="documentation/readme_images/bag-buttons.png">
+</details>
+<br><br>
+
+2. Order Summary: Provides a clear and detailed overview of the user's selected items, including product images, quantities, names, and subtotals. This allows users to review their order before finalizing the purchase.
+
+For Each Item in the Order:
+* Product Image
+* Quantity
+* Product Name
+* Subtotal for the Item
+
+ At the Bottom of the Order Summary:
+* Order Total
+* Delivery Cost
+* Grand Total
+If the Grand Total is below the free delivery threshold, a red text warning will inform the user how much more they need to spend to qualify for free delivery.
+
+<details>
+<summary>Order Summary</summary>
+<br>
+<img src="documentation/readme_images/bag-buttons.png">
+</details>
+<br><br>
+
+3. Buttons:
+
+"Adjust Bag" Button: Allows users to go back to the shopping bag page to make any necessary adjustments before finalizing the order.
+
+"Complete Order" Button: Submits the order form for processing. Payment is handled securely by Stripe.
+
+<details>
+<summary>Checkout Buttons</summary>
+<br>
+<img src="documentation/readme_images/bag-buttons.png">
+</details>
+<br><br>
+
+4. User Authentication Links and Profile Integration:
+
+If the user is not logged in, there are links provided to either register for a new account or log in if they already have an existing account. This ensures the accuracy of the delivery information and allows for order tracking.
+
+If the user is logged in, a checkbox option is available to add this delivery information to their user profile. This feature streamlines the ordering process for future purchases, making it more convenient for the user.
+
+<details>
+<summary>User Authentication Links and Profile Integration</summary>
 <br>
 <img src="documentation/readme_images/bag-buttons.png">
 </details>
