@@ -510,3 +510,71 @@ The Products Page dynamically showcases products sourced from the database, cont
 <img src="documentation/readme_images/edit-delete-links.png">
 </details>
 <br><br>
+
+### Product Details Page
+
+ The Product Deatails Page plays a pivotal role in guiding users through their shopping journey, providing them with the information and tools they need to make informed purchasing decisions. It combines visual appeal with functional features to create an engaging and user-friendly shopping experience.
+
+<details>
+<summary>Product Details - Desktop</summary>
+<br>
+<img src="documentation/readme_images/edit-delete-links.png">
+</details>
+<details>
+<summary>Product Details - Mobile</summary>
+<br>
+<img src="documentation/readme_images/edit-delete-links.png">
+</details>
+<br><br>
+
+ **Product Details Page Components**
+
+ 1. Product Image: Presents a visual representation of the product, providing users with a clear view of what they are considering. Image will open in new tab if clicked enabling user closer inspection, in further development image would open in zoomable modal.
+
+ 2. Product Information:
+
+    * Product Name: Clearly states the name of the product.
+    * Price: Indicates the cost of the product.
+    * Category and Subcategory: Specifies the specific category and subcategory to which the product belongs redirects to a view of products filtered by relevant category or subcategory.
+    * Manufacturer: Displays the name of the manufacturer or publisher responsible for producing the product.
+    * Product Description: Offers a comprehensive overview of the product's features, specifications, and benefits, assisting users in making informed decisions.
+
+<details>
+<summary>Product Image and Information</summary>
+<br>
+<img src="documentation/readme_images/edit-delete-links.png">
+</details>
+<br><br>
+
+3. Quantity Input Box: Allows users to specify the quantity of the product they wish to add to their shopping bag, ensuring precise ordering. Users are unable to select a quantity outside of the range 1-99, this acheived by disabling the use of the decrement and increment buttons on the quantity input and by checking the validity of the form on submission.
+
+<details>
+<summary>Quantity Input Box</summary>
+<br>
+<img src="documentation/readme_images/edit-delete-links.png">
+</details>
+<br><br>
+
+4. "Keep Shopping" and "Add to Bag" Buttons: Offer two distinct options for user actions. "Keep Shopping" allows users to continue browsing products, while "Add to Bag" submits the quantity input form and places the selected item into their shopping bag.
+
+<details>
+<summary>"Keep Shopping" and "Add to Bag" Buttons</summary>
+<br>
+<img src="documentation/readme_images/edit-delete-links.png">
+</details>
+<br><br>
+
+5. Reviews Section (Hidden by JS Click to Reveal): Conceals the reviews section by default, providing a cleaner interface. Users can choose to reveal the reviews by clicking on the heading, providing additional feedback and insights about the product. Revealing reviews section also enables the user to submit a review about the product by reavealing the "Add Review" Button. Ability to add reviews is limited to authenticated users.
+
+<details>
+<summary>Reviews Section - Collapsed</summary>
+<br>
+<img src="documentation/readme_images/edit-delete-links.png">
+</details>
+<details>
+<summary><summary>Reviews Section - Expanded</summary>
+<br>
+<img src="documentation/readme_images/edit-delete-links.png">
+</details>
+<br><br>
+
