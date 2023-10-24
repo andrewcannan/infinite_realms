@@ -399,3 +399,19 @@ The website's favicon, the small icon displayed in the browser tab, was created 
 <img src="documentation/readme_images/favicon.png">
 </details>
 <br><br>
+
+### Homepage
+
+The homepage has a minimalist design, featuring a tagline that encapsulates the essence of the store. A Call-to-Action (CTA) button guides visitors to explore the comprehensive range of products available on the site. This deliberate simplicity ensures that the homepage remains uncluttered, with a special emphasis on directing the user to the diverse collection of anime apparel.
+
+<details>
+<summary>Homepage - Desktop</summary>
+<br>
+<img src="documentation/readme_images/modal-delete-product.png">
+</details>
+<details>
+<summary>Homepage - Mobile</summary>
+<br>
+<img src="documentation/readme_images/modal-delete-review.png">
+</details>
+<br><br>
