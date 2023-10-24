@@ -407,11 +407,11 @@ The homepage has a minimalist design, featuring a tagline that encapsulates the 
 <details>
 <summary>Homepage - Desktop</summary>
 <br>
-<img src="documentation/readme_images/modal-delete-product.png">
+<img src="documentation/readme_images/homepage-desktop.png">
 </details>
 <details>
 <summary>Homepage - Mobile</summary>
 <br>
-<img src="documentation/readme_images/modal-delete-review.png">
+<img src="documentation/readme_images/homepage-mobile.png">
 </details>
 <br><br>
