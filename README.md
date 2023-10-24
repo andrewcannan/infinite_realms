@@ -380,11 +380,11 @@ By incorporating modals in this context, the website prioritizes user experience
 <details>
 <summary>Modal - Delete Product</summary>
 <br>
-<img src="documentation/readme_images/footer-desktop.png">
+<img src="documentation/readme_images/modal-delete-product.png">
 </details>
 <details>
 <summary>Modal - Delete Review</summary>
 <br>
-<img src="documentation/readme_images/footer-mobile.png">
+<img src="documentation/readme_images/modal-delete-review.png">
 </details>
 <br><br>
