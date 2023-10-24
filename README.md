@@ -25,6 +25,7 @@ This website was created as the 4th Milestone Project for Code Institute's web a
     * [Homepage](#homepage)
     * [Products Page](#products)
     * [Product Details Page](#product-details-page)
+    * [Bag Page](#bag-page)
 
 <br><br>
 
@@ -595,12 +596,12 @@ The Bag page enhances the overall shopping experience by giving users control ov
 <details>
 <summary>Bag - Desktop</summary>
 <br>
-<img src="documentation/readme_images/product-details-desktop.png">
+<img src="documentation/readme_images/bag-desktop.png">
 </details>
 <details>
 <summary>Bag - Mobile</summary>
 <br>
-<img src="documentation/readme_images/product-details-mobile.png">
+<img src="documentation/readme_images/bag-mobile.png">
 </details>
 <br><br>
 
@@ -627,12 +628,12 @@ The Bag page enhances the overall shopping experience by giving users control ov
 <details>
 <summary>Product Information Section - Desktop</summary>
 <br>
-<img src="documentation/readme_images/product-details-mobile.png">
+<img src="documentation/readme_images/item-info-desktop.png">
 </details>
 <details>
 <summary>Product Information Section - Mobile</summary>
 <br>
-<img src="documentation/readme_images/product-details-mobile.png">
+<img src="documentation/readme_images/item-info-mobile.png">
 </details>
 <br><br>
 
@@ -649,7 +650,7 @@ The Bag page enhances the overall shopping experience by giving users control ov
 <details>
 <summary>Bag Summary</summary>
 <br>
-<img src="documentation/readme_images/product-details-mobile.png">
+<img src="documentation/readme_images/bag-summary.png">
 </details>
 <br><br>
 
@@ -662,6 +663,6 @@ Secure Checkout: This button initiates the checkout process, leading the user to
 <details>
 <summary>Shopping Bag Buttons</summary>
 <br>
-<img src="documentation/readme_images/product-details-mobile.png">
+<img src="documentation/readme_images/bag-buttons.png">
 </details>
 <br><br>
