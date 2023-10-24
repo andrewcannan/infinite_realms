@@ -293,3 +293,53 @@ Schema to show tables in database along with thier relation to each other, also 
 
 <img src="documentation/db_schema/db-schema.png">
 <br><br>
+
+### Styling
+
+ A Minimalist color scheme helps direct the viewer's attention to the products themselves. Without overly vibrant or distracting colors, the products take center stage, allowing potential customers to focus on their features and details. Minimalist color palettes are often associated with modern design and a clean, sophisticated aesthetic.  It aids in making the website look clean, organized, and well-curated.
+
+ Ubuntu was chosen as the font-family for the website as the Ubuntu font is a versatile typeface that balances readability with a modern, friendly aesthetic. Its widespread use in the Ubuntu operating system and beyond attests to its popularity and effectiveness in digital communication.
+
+ The background imagery for both the homepage and authentication pages was crafted using [Ideogram](https://ideogram.ai/), an advanced AI-powered design tool. This deliberate choice reflects a commitment to a distinctive visual identity, setting our website apart with a unique and memorable aesthetic.
+
+ The product images featured on our website were carefully curated from [Forbidden Planet](https://forbiddenplanet.com/), a renowned source for high-quality collectibles, gifts, and comic books. This deliberate choice ensures that our customers have access to authentic and sought-after merchandise from a reputable and trusted supplier.
+ <br><br>
+
+ ## Features
+
+ ### Mutli-Page Features
+
+ #### Navbar
+
+The website's navigation comprises two key elements: the top navigation and the main navigation. The top navigation, depicted below, features essential functionalities. Visitors can access the site's logo, conduct product searches using the search bar, and either sign up or log in via the "My Account" icon. Additionally, users can easily view the total number of items in their shopping bag. Once signed in, the options available in the "My Account" dropdown menu vary based on the user's level. Shop Owners/Administrators have access to "Product Management" and "Enquiries", while shoppers can navigate to "My Profile" or "Contact Us". Both user types possess the ability to log out from the "My Account" dropdown.
+
+The second component, the main navigation, empowers visitors to explore various product categories. This component is accessible through the hamburger icon on mobile devices. This navigation system and all of its constituent elements have been meticulously designed to be fully responsive, as exemplified by the accompanying screenshots.
+
+<details>
+<summary>Navbar - Desktop</summary>
+<br>
+<img src="eliteptpro/docs/readme-images/navbar-logged-out.png">
+</details>
+<details>
+<summary>Navbar - Mobile</summary>
+<br>
+<img src="eliteptpro/docs/readme-images/navbar-member-logged-in.png">
+</details>
+<details>
+<summary>My Account - Logged out</summary>
+<br>
+<img src="eliteptpro/docs/readme-images/navbar-trainer-logged-in.png">
+</details>
+<details>
+<summary>My Account - Shopper</summary>
+<br>
+<img src="eliteptpro/docs/readme-images/navbar-admin-logged-in.png">
+</details>
+<details>
+<summary>My Account - Shop Owner/Administrator</summary>
+<br>
+<img src="eliteptpro/docs/readme-images/navbar-admin-logged-in.png">
+</details>
+
+This deliberate design ensures that visitors can seamlessly and intuitively navigate the site, regardless of their device or screen size, enhancing their overall browsing experience.
+<br><br>
