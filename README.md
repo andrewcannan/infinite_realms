@@ -396,6 +396,6 @@ The website's favicon, the small icon displayed in the browser tab, was created 
 <details>
 <summary>Favicon</summary>
 <br>
-<img src="documentation/readme_images/modal-delete-review.png">
+<img src="documentation/readme_images/favicon.png">
 </details>
 <br><br>
