@@ -388,3 +388,14 @@ By incorporating modals in this context, the website prioritizes user experience
 <img src="documentation/readme_images/modal-delete-review.png">
 </details>
 <br><br>
+
+#### Favicon 
+
+The website's favicon, the small icon displayed in the browser tab, was created by cropping the initial section of the navbar logo. This customized favicon was generated using the online tool available at [Favicon](https://favicon.io/). This distinctive icon enhances brand recognition and provides a visual representation of the website for users navigating through multiple browser tabs.
+
+<details>
+<summary>Favicon</summary>
+<br>
+<img src="documentation/readme_images/modal-delete-review.png">
+</details>
+<br><br>
