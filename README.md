@@ -22,6 +22,8 @@ This website was created as the 4th Milestone Project for Code Institute's web a
     * [Styling](#styling)
 * [Feautres](#features)
     * [Multi-Page Features](#mutli-page-features)
+    * [Homepage](#homepage)
+    * [Products Page](#products)
 
 <br><br>
 
