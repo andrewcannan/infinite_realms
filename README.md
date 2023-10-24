@@ -27,6 +27,9 @@ This website was created as the 4th Milestone Project for Code Institute's web a
     * [Product Details Page](#product-details-page)
     * [Bag Page](#bag-page)
     * [Checkout Page](#checkout-page)
+* [Technologies](#technologies)
+* [Testing](#testing)
+* [Deployment](#deployment)
 
 <br><br>
 
@@ -806,3 +809,65 @@ This button allows the shopper to return to the Products Page, giving them the o
 3. Confirmation Email:
 
 A confirmation email is automatically sent to the user's provided email address. The email includes a summary of the order.
+
+## Technologies
+
+### Languages
+
+* HTML5 - for content and structure.
+* CSS3 - for styling.
+* JS/JQuery - for frontend functionality and functions that request and handle data from the backend.
+* Python - for the backend functionality.
+    * Python Modules used -
+    * asgiref==3.7.2
+    * boto3==1.28.62
+    * botocore==1.31.62
+    * dj-database-url==0.5.0
+    * Django==3.2.21
+    * django-allauth==0.41.0
+    * django-countries==7.2.1
+    * django-crispy-forms==1.14.0
+    * django-storages==1.14.2
+    * gunicorn==21.2.0
+    * jmespath==1.0.1
+    * oauthlib==3.2.2
+    * Pillow==10.0.1
+    * psycopg2==2.9.9
+    * python3-openid==3.2.0
+    * requests-oauthlib==1.3.1
+    * s3transfer==0.7.0
+    * sqlparse==0.4.4
+    * stripe==6.6.0
+    * urllib3==1.26.17
+<br><br>
+
+### Tools
+
+* Cloudconvert - used to convert images to WEBP format.
+* Tinypng - used to compress images.
+* Baslamiq - used to create wireframes.
+* Logo.com - used to create logo.
+* Diagrams.net - used to create DB schema.
+* Am I Responsive - used to create responsive mockup for readme.
+* Google Dev Tools - used for troubleshooting during development.
+* Git/Github - used for version control and storage.
+* Bootstrap - used for layout, positioning and styling.
+* Favicon.io - used to create favicon.
+* FontAwesome - used for icons.
+* Heroku - used for deployment.
+* Djecrety - used to create secret keys.
+* AWS S3 - used to store images and static files.
+* Stripe - Used to process the payment information.
+* SQLite - Used for database for local development.
+* ElepehantSQL - Used to host the production database.
+<br><br>
+
+## Testing
+
+For testing please see the [Testing](/TESTING.md) documentation.
+<br><br>
+
+## Deployment
+
+For deployment please see the [Testing](/DEPLOYMENT.md) documentation.
+<br><br>
