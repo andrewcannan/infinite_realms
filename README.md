@@ -346,3 +346,25 @@ The second component, the main navigation, empowers visitors to explore various 
 
 This deliberate design ensures that visitors can seamlessly and intuitively navigate the site, regardless of their device or screen size, enhancing their overall browsing experience.
 <br><br>
+
+#### Footer
+
+The footer is a consistent element present on every page of the website. It serves as a valuable navigation tool for mobile users, providing direct access to the homepage, especially since the navbar logo may not be easily accessible on smaller screens.
+
+Within the footer, users will find a concise "About Us" section, offering a brief overview of the store's mission or purpose. Additionally, there are links to social media accounts, allowing users to connect with the brand on various platforms and stay updated with the latest news and promotions.
+
+A noteworthy disclaimer is also included, informing users that any payments processed through Stripe are conducted in a test mode. This ensures transparency and sets clear expectations for users engaging in transactions on the site.
+
+Overall, the footer serves as a well-structured and informative section, enhancing user experience by providing easy access to key information and navigation options, while also reinforcing trust and transparency in the payment process.
+
+<details>
+<summary>Footer - Desktop</summary>
+<br>
+<img src="documentation/readme_images/footer-desktop.png">
+</details>
+<details>
+<summary>Footer - Mobile</summary>
+<br>
+<img src="documentation/readme_images/footer-mobile.png">
+</details>
+<br><br>
