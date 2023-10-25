@@ -913,7 +913,7 @@ A confirmation email is automatically sent to the user's provided email address.
 
 ### Add Review Page
 
-When the user clicks the Leave a Review button on the product details page, they are redirected to the Add Review page for that product. The Add Review page contributes to a dynamic and interactive shopping experience, empowering users to share their opinions and contribute to the collective knowledge about products available in the store.
+When the user clicks the Leave a Review button on the product details page, they are redirected to the Add Review page for that product. The Add Review page contributes to a dynamic and interactive shopping experience, empowering users to share their opinions and contribute to the collective knowledge about products available in the store. Ability to add a review is limited to authenticated users.
 
 <details>
 <summary>Add Review- Desktop</summary>
@@ -947,6 +947,22 @@ When the user clicks the Leave a Review button on the product details page, they
 <summary>Desktop Image</summary>
 <br>
 <img src="documentation/readme_images/add-review-image.png">
+</details>
+<br><br>
+
+### Edit Review Page
+
+The Edit Review page serves the purpose of allowing users to make modifications to their existing reviews. It shares a similar structure with the Add Review page, but the form is prepopulated with the current review data. Ability to edit reviews is limited to the user that created the review or Shop Owner/Administrator.
+
+<details>
+<summary>Edit Review- Desktop</summary>
+<br>
+<img src="documentation/readme_images/add-review-desktop.png">
+</details>
+<details>
+<summary>Edit Review - Mobile</summary>
+<br>
+<img src="documentation/readme_images/add-review-mobile.png">
 </details>
 <br><br>
 
