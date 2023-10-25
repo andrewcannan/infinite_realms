@@ -1062,7 +1062,7 @@ The purpose of the Send Response page is to provide a dedicated space for the Sh
 </details>
 <br><br>
 
-**Enquiries Page Components**
+**Send Response Page Components**
 
 1. Response Form:
 The form includes a textarea where the shop owner can compose a response message.
@@ -1078,6 +1078,14 @@ This section displays all the details of the original contact form submission, i
 3. Upon submission of the response form, the following actions occur:
 The response_sent field on the contact table in the database is updated to indicate that a response has been sent.
 An email is automatically sent to the user who sent the original enquiry. This email includes the details of their original contact form submission and the response from the shop owner.
+
+### 404 Error Page
+
+The 404 Error Page serves the purpose of handling and communicating 404 errors, indicating that the requested page could not be found. A button is provided that redirects the user back to the Homepage.
+
+### 500 Error Page
+
+The 500 Error Page serves the purpose of handling and communicating 500 errors, indicating that the there was an internal server error.. A button is provided that redirects the user back to the Homepage.
 
 ## Technologies
 
