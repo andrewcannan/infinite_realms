@@ -41,6 +41,7 @@ This website was created as the 4th Milestone Project for Code Institute's web a
 * [Technologies](#technologies)
 * [Testing](#testing)
 * [Deployment](#deployment)
+* [Credits](#credits)
 
 <br><br>
 
@@ -1175,3 +1176,11 @@ For testing please see the [Testing](/TESTING.md) documentation.
 
 For deployment please see the [Testing](/DEPLOYMENT.md) documentation.
 <br><br>
+
+## Credits
+
+All product information, including images, were sourced from the [Forbidden Planet](https://forbiddenplanet.com/) website.
+
+Hero image was generated at [Ideogram.ai](https://ideogram.ai/) direct link to image [here](https://ideogram.ai/g/yEP-bNcqRSGHJVfzij6GAA/3).
+
+Base that this project was built upon came from Code Institute's Boutique Ado walkthrough project.
