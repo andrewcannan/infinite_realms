@@ -943,7 +943,7 @@ When the user clicks the Leave a Review button on the product details page, they
 </details>
 <br><br>
 
-**Profile Page Components**
+**Add Review Page Components**
 
 1. Review Form:
 * Title Field: Allows the user to input a title for their review.
@@ -998,7 +998,7 @@ The Edit Review page serves the purpose of allowing users to make modifications 
 </details>
 <br><br>
 
-**Profile Page Components**
+**Add Product Page Components**
 
 Add Product Form:
 * Category Dropdown: Allows the user to select the appropriate category for the new product from a list of available categories stored in the database.
