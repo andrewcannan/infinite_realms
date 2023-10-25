@@ -1008,12 +1008,12 @@ The Edit Products page serves the purpose of allowing users to make modification
 <details>
 <summary>Edit Product - Desktop</summary>
 <br>
-<img src="documentation/readme_images/add-product-desktop.png">
+<img src="documentation/readme_images/edit-product-desktop.png">
 </details>
 <details>
 <summary>Edit Product - Mobile</summary>
 <br>
-<img src="documentation/readme_images/add-product-mobile.png">
+<img src="documentation/readme_images/edit-product-mobile.png">
 </details>
 <br><br>
 
