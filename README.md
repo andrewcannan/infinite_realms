@@ -957,12 +957,12 @@ The Edit Review page serves the purpose of allowing users to make modifications 
 <details>
 <summary>Edit Review- Desktop</summary>
 <br>
-<img src="documentation/readme_images/add-review-desktop.png">
+<img src="documentation/readme_images/edit-review-desktop.png">
 </details>
 <details>
 <summary>Edit Review - Mobile</summary>
 <br>
-<img src="documentation/readme_images/add-review-mobile.png">
+<img src="documentation/readme_images/edit-review-mobile.png">
 </details>
 <br><br>
 
