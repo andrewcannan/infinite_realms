@@ -27,6 +27,9 @@ This website was created as the 4th Milestone Project for Code Institute's web a
     * [Product Details Page](#product-details-page)
     * [Bag Page](#bag-page)
     * [Checkout Page](#checkout-page)
+    * [Checkout Success Page](#checkout-success)
+    * [Profile Page](#profile-page)
+    * [Contact Us Page](#contact-us)
 * [Technologies](#technologies)
 * [Testing](#testing)
 * [Deployment](#deployment)
@@ -782,7 +785,7 @@ If the user is logged in, a checkbox option is available to add this delivery in
 </details>
 <br><br>
 
-### Checkout Success 
+### Checkout Success Page
 
 After the successful processing of an order, the shopper is automatically redirected to the Checkout Success Page. This page provides a comprehensive receipt that includes the following details:
 
@@ -899,7 +902,7 @@ Upon loading the page, the "Order History" section of the accordion is automatic
 
 Expanding another section automatically collapses the currently open section. This ensures that only one section of the accordion is open at a time, providing a clean and organized user interface.
 
-### Contact Us
+### Contact Us Page
 
 The purpose of the Contact Us page is to establish a direct and accessible communication channel between the users and the shop owner. Page is only available to authenticated users.
 
