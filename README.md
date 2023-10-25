@@ -1053,12 +1053,12 @@ The purpose of the Send Response page is to provide a dedicated space for the Sh
 <details>
 <summary>Send Response - Desktop</summary>
 <br>
-<img src="documentation/readme_images/enquiries-desktop.png">
+<img src="documentation/readme_images/send-response-desktop.png">
 </details>
 <details>
 <summary>Send Response - Mobile</summary>
 <br>
-<img src="documentation/readme_images/enquiries-mobile.png">
+<img src="documentation/readme_images/send-response-mobile.png">
 </details>
 <br><br>
 
