@@ -973,12 +973,12 @@ The Edit Review page serves the purpose of allowing users to make modifications 
  <details>
 <summary>Add Product - Desktop</summary>
 <br>
-<img src="documentation/readme_images/edit-review-desktop.png">
+<img src="documentation/readme_images/add-product-desktop.png">
 </details>
 <details>
 <summary>Add Product - Mobile</summary>
 <br>
-<img src="documentation/readme_images/edit-review-mobile.png">
+<img src="documentation/readme_images/add-product-mobile.png">
 </details>
 <br><br>
 
@@ -997,7 +997,7 @@ Add Product Form:
 <details>
 <summary>Category and Subcategory Dropdowns</summary>
 <br>
-<img src="documentation/readme_images/edit-review-mobile.png">
+<video src="documentation/readme_images/add-product-selects.webm" controls="controls"></video>
 </details>
 <br><br>
 
