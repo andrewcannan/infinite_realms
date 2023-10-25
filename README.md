@@ -810,9 +810,9 @@ This button allows the shopper to return to the Products Page, giving them the o
 
 A confirmation email is automatically sent to the user's provided email address. The email includes a summary of the order.
 
-### Checkout Success
+### Profile Page
 
-The Profile Page serves as a hub for users to manage their default delivery information, review their order, reviews and enquiries history. It contributes to a seamless and personalized user experience.
+The Profile Page serves as a hub for users to manage their default delivery information, review their order, reviews and enquiries history. It contributes to a seamless and personalized user experience. Ability to access profile page is limited to authenticated users.
 
 <details>
 <summary>Profile - Desktop</summary>
@@ -955,12 +955,47 @@ When the user clicks the Leave a Review button on the product details page, they
 The Edit Review page serves the purpose of allowing users to make modifications to their existing reviews. It shares a similar structure with the Add Review page, but the form is prepopulated with the current review data. Ability to edit reviews is limited to the user that created the review or Shop Owner/Administrator.
 
 <details>
-<summary>Edit Review- Desktop</summary>
+<summary>Edit Review - Desktop</summary>
 <br>
 <img src="documentation/readme_images/edit-review-desktop.png">
 </details>
 <details>
 <summary>Edit Review - Mobile</summary>
+<br>
+<img src="documentation/readme_images/edit-review-mobile.png">
+</details>
+<br><br>
+
+### Add Product
+
+ The Add Product page is an essential tool for maintaining and expanding the store's product catalog, allowing Shop Owner/Administrators to efficiently and accurately add new items for customers to explore and purchase. Access to this page is limited specifically to Superusers.
+
+ <details>
+<summary>Add Product - Desktop</summary>
+<br>
+<img src="documentation/readme_images/edit-review-desktop.png">
+</details>
+<details>
+<summary>Add Product - Mobile</summary>
+<br>
+<img src="documentation/readme_images/edit-review-mobile.png">
+</details>
+<br><br>
+
+**Profile Page Components**
+
+Add Product Form:
+* Category Dropdown: Allows the user to select the appropriate category for the new product from a list of available categories stored in the database.
+* Subcategory Dropdown: Populated dynamically based on the selected category, utilizing an AJAX request and response when category field is changed to provide relevant subcategory options.
+* SKU: Enables the user to input the Stock Keeping Unit (SKU) for the new product.
+* Name.
+* Description.
+* Manufacturer.
+* Price Field.
+* Product Image Widget: Provides functionality to upload an associated image with the new product.
+
+<details>
+<summary>Category and Subcategory Dropdowns</summary>
 <br>
 <img src="documentation/readme_images/edit-review-mobile.png">
 </details>
