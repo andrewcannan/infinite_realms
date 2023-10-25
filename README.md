@@ -826,6 +826,8 @@ The Profile Page serves as a hub for users to manage their default delivery info
 </details>
 <br><br>
 
+**Profile Page Components**
+
 1. Default Delivery Information Form:
 * Full Name
 * Street Address 1
@@ -880,6 +882,73 @@ Displays contact form submissions made by the user, indicating whether a respons
 Upon loading the page, the "Order History" section of the accordion is automatically open, displaying the user's order history.
 
 Expanding another section automatically collapses the currently open section. This ensures that only one section of the accordion is open at a time, providing a clean and organized user interface.
+
+### Contact Us
+
+The purpose of the Contact Us page is to establish a direct and accessible communication channel between the users and the shop owner. Page is only available to authenticated users.
+
+<details>
+<summary>Contact Us- Desktop</summary>
+<br>
+<img src="documentation/readme_images/profile-messages.png">
+</details>
+<details>
+<summary>Contact Us - Mobile</summary>
+<br>
+<img src="documentation/readme_images/profile-messages.png">
+</details>
+<br><br>
+
+**Contact Us Page Components**
+
+1. Contact Form:
+
+* Dropdown Menu: Provides a range of options for users to select the reason why they want to contact the shop owner. This ensures that inquiries are categorized for efficient handling.
+
+* Text Area: Allows users to compose and leave their message. This provides a space for users to articulate their inquiries, feedback, or requests in detail.
+
+2. Confirmation Email to User:
+
+A confirmation email is automatically sent to the user's provided email address. This email serves as a receipt and contains details of the enquiry that was sent to the shop owner.
+
+### Add Review Page
+
+When the user clicks the Leave a Review button on the product details page, they are redirected to the Add Review page for that product. The Add Review page contributes to a dynamic and interactive shopping experience, empowering users to share their opinions and contribute to the collective knowledge about products available in the store.
+
+<details>
+<summary>Contact Us- Desktop</summary>
+<br>
+<img src="documentation/readme_images/profile-messages.png">
+</details>
+<details>
+<summary>Contact Us - Mobile</summary>
+<br>
+<img src="documentation/readme_images/profile-messages.png">
+</details>
+<br><br>
+
+**Profile Page Components**
+
+1. Review Form:
+* Title Field: Allows the user to input a title for their review.
+* Textarea for Content: Provides a space for the user to write the content of their review.
+* Rating Dropdown: Allows the user to select a rating from 0 to 5, indicating their overall satisfaction with the product.
+
+<details>
+<summary>Contact Us - Mobile</summary>
+<br>
+<img src="documentation/readme_images/profile-messages.png">
+</details>
+<br><br>
+
+2. On desktop, an image of the product is available for reference while writing the review. Not available on mobile as it takes up to much screen real estate.
+
+<details>
+<summary>Contact Us - Mobile</summary>
+<br>
+<img src="documentation/readme_images/profile-messages.png">
+</details>
+<br><br>
 
 ## Technologies
 
