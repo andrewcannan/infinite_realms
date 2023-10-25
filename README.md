@@ -397,6 +397,22 @@ By incorporating modals in this context, the website prioritizes user experience
 </details>
 <br><br>
 
+#### Toasts
+
+Toasts are utilized throughout the site. Toasts are small, non-intrusive notifications that are displayed to the user to convey various types of messages. They serve the purpose of providing feedback or important information in a visually unobtrusive manner.
+
+1. Success Toast:
+Indicates that an action or process was successful. Accented in green.
+
+2. Error Toast:
+Alerts the user about an error or problem that occurred. Accented in red.
+
+3. Info Toast:
+Provides informative messages that do not require immediate action from the user. Accented in blue.
+
+4. Warning Toast:
+Warns the user about a situation that may require their attention. Accented in yellow.
+
 #### Favicon 
 
 The website's favicon, the small icon displayed in the browser tab, was created by cropping the initial section of the navbar logo. This customized favicon was generated using the online tool available at [Favicon](https://favicon.io/). This distinctive icon enhances brand recognition and provides a visual representation of the website for users navigating through multiple browser tabs.
