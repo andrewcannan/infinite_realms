@@ -56,7 +56,7 @@ This website was created as the 4th Milestone Project for Code Institute's web a
 - The owner aims to offer a carefully curated selection of anime collectibles, gifts, and comic books. This includes both well-loved classics and the latest releases, ensuring there's something for every fan.
 - The owner wants customers to have a positive and enjoyable shopping experience. This includes a user-friendly website that is easily navigable.
 - The owner wants to offer customers the ability to express their opinions, providing valuable insights for both the owner and potential buyers.
-- Customer satisfaction is a top priority. The owner is dedicated to providing excellent customer service, which includes timely responses to inquiries, assistance with orders, and addressing any concerns that may arise.
+- Customer satisfaction is a top priority. The owner is dedicated to providing excellent customer service, which includes timely responses to enquiries, assistance with orders, and addressing any concerns that may arise.
 <br><br>
 
 ### Shoppers Goals
@@ -65,7 +65,7 @@ This website was created as the 4th Milestone Project for Code Institute's web a
 - Shoppers would want a user-friendly website with a secure checkout process to ensure a hassle-free shopping experience.
 - Some shoppers may want to engage with the community through forums, discussions, or by leaving reviews for products they've purchased.
 - Shoppers would want easy access to customer support in case they have any questions, concerns, or need assistance with their orders.
-- Shoppers would want timely feedback from any interaction with the website, whether it's making a purchase or submitting an inquiry/ contacting the owner.
+- Shoppers would want timely feedback from any interaction with the website, whether it's making a purchase or submitting an enquiry/ contacting the owner.
 <br><br>
 
 ## Design
@@ -113,7 +113,7 @@ From the goals outlined above user stories were created to ensure that developme
 | 29                                   | Store Owner     | Delete a review if necessary.                                                            | Have the ability to completely remove unacceptable comments or discriminatory statements. |
 | **CONTACT**                      |                 |                                                                                          |                                                                                           |
 | 30                                   | Shopper         | Quickly locate the "Contact Us" page.                                                    | Reach out with any questions or concerns I may have in an efficient manner.               |
-| 31                                   | Shopper         | Expect the contact form to offer various subjects for inquiries.                         | Communicate inquiries quickly and effectively with the support team.                      |
+| 31                                   | Shopper         | Expect the contact form to offer various subjects for enquiries.                         | Communicate enquiries quickly and effectively with the support team.                      |
 | 32                                   | Shopper         | Receive a confirmation message upon submitting the contact form.                         | Receive a clear confirmation that my message has been received.                           |
 | 33                                   | Shopper         | Receive an email confirmation containing the details of my submitted message.            | Maintain a record of my communications for future personal reference.                     |
 | **ADMIN & STORE MANAGEMENT**     |                 |                                                                                          |                                                                                           |
@@ -373,7 +373,7 @@ The footer is a consistent element present on every page of the website. It serv
 
 Within the footer, users will find a concise "About Us" section, offering a brief overview of the store's mission or purpose. Additionally, there are links to social media accounts, allowing users to connect with the brand on various platforms and stay updated with the latest news and promotions.
 
-A noteworthy disclaimer is also included, informing users that any payments processed through Stripe are conducted in a test mode. This ensures transparency and sets clear expectations for users engaging in transactions on the site.
+A noteworthy disclaimer is also included, informing users that any payments processed through Stripe are conducted in test mode. This ensures transparency and sets clear expectations for users engaging in transactions on the site.
 
 Overall, the footer serves as a well-structured and informative section, enhancing user experience by providing easy access to key information and navigation options, while also reinforcing trust and transparency in the payment process.
 
@@ -521,7 +521,7 @@ The Products Page dynamically showcases products sourced from the database, cont
 </details>
 <br><br>
 
-5. Product Cards: Each product is displayed in an individual card format. Cards are arranged in coloum amounts suitable for screen size of the user. The card includes:
+5. Product Cards: Each product is displayed in an individual card format. Cards are arranged in coloumn amounts suitable for screen size of the user. The card includes:
 
 * Product Image: Clickable and serves as a direct link to the product's detail page, providing users with a visual representation of the product.
 * Product Name: Clearly states the name of the product.
@@ -931,9 +931,9 @@ The purpose of the Contact Us page is to establish a direct and accessible commu
 
 1. Contact Form:
 
-* Dropdown Menu: Provides a range of options for users to select the reason why they want to contact the shop owner. This ensures that inquiries are categorized for efficient handling.
+* Dropdown Menu: Provides a range of options for users to select the reason why they want to contact the shop owner. This ensures that enquiries are categorized for efficient handling.
 
-* Text Area: Allows users to compose and leave their message. This provides a space for users to articulate their inquiries, feedback, or requests in detail.
+* Text Area: Allows users to compose and leave their message. This provides a space for users to articulate their enquiries, feedback, or requests in detail.
 
 2. Confirmation Email to User:
 
@@ -1047,7 +1047,7 @@ The Edit Products page serves the purpose of allowing users to make modification
 
 ### Enquiries Page
 
-The purpose of the Enquiries page is to serve as a centralized hub for managing and responding to user inquiries or messages directed to the shop owner. The page is populated with only unresponded enquiries and is accessible exclusively by superusers.
+The purpose of the Enquiries page is to serve as a centralized hub for managing and responding to user enquiries or messages directed to the shop owner. The page is populated with only unresponded enquiries and is accessible exclusively by superusers.
 
 <details>
 <summary>Enquiries - Desktop</summary>
