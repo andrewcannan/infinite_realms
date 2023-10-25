@@ -817,12 +817,12 @@ The Profile Page serves as a hub for users to manage their default delivery info
 <details>
 <summary>Profile - Desktop</summary>
 <br>
-<img src="documentation/readme_images/checkout-success-desktop.png">
+<img src="documentation/readme_images/profile-desktop.png">
 </details>
 <details>
 <summary>Profile - Mobile</summary>
 <br>
-<img src="documentation/readme_images/checkout-success-mobile.png">
+<img src="documentation/readme_images/profile-mobile.png">
 </details>
 <br><br>
 
@@ -838,7 +838,7 @@ The Profile Page serves as a hub for users to manage their default delivery info
 <details>
 <summary>Default Delivery Information</summary>
 <br>
-<img src="documentation/readme_images/checkout-success-mobile.png">
+<img src="documentation/readme_images/profile-delivery-information.png">
 </details>
 <br><br>
 
@@ -853,7 +853,7 @@ Displays past orders with the following details for each order:
 <details>
 <summary>Order History</summary>
 <br>
-<img src="documentation/readme_images/checkout-success-mobile.png">
+<img src="documentation/readme_images/profile-order-history.png">
 </details>
 <br><br>
 
@@ -863,7 +863,7 @@ Lists all reviews made by the user, along with options for edit and delete actio
 <details>
 <summary>Reviews</summary>
 <br>
-<img src="documentation/readme_images/checkout-success-mobile.png">
+<img src="documentation/readme_images/profile-reviews.png">
 </details>
 <br><br>
 
@@ -873,7 +873,7 @@ Displays contact form submissions made by the user, indicating whether a respons
 <details>
 <summary>Messages</summary>
 <br>
-<img src="documentation/readme_images/checkout-success-mobile.png">
+<img src="documentation/readme_images/profile-messages.png">
 </details>
 <br><br>
 
