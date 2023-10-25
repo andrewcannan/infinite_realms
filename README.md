@@ -1046,6 +1046,39 @@ The table displays the following columns:
 2. Responsive Design:
 Below 768px, the Date column is hidden to ensure the table remains fully visible on various screen sizes. When the screen size is reduced beyond a certain point, the table becomes horizontally scrollable to accommodate all information.
 
+### Send Response Page
+
+The purpose of the Send Response page is to provide a dedicated space for the Shop Owner/Administrator to compose and send responses to user enquiries. It streamlines the process of addressing user enquiries, allowing the Shop Owner/Administrator to provide timely and personalized responses. Access to this page is limited to superusers.
+
+<details>
+<summary>Send Response - Desktop</summary>
+<br>
+<img src="documentation/readme_images/enquiries-desktop.png">
+</details>
+<details>
+<summary>Send Response - Mobile</summary>
+<br>
+<img src="documentation/readme_images/enquiries-mobile.png">
+</details>
+<br><br>
+
+**Enquiries Page Components**
+
+1. Response Form:
+The form includes a textarea where the shop owner can compose a response message.
+
+2. Contact Form Submission Details:
+This section displays all the details of the original contact form submission, including:
+* User's Name
+* User's Email
+* Reason for Contact
+* Original Message
+* Submission Process:
+
+3. Upon submission of the response form, the following actions occur:
+The response_sent field on the contact table in the database is updated to indicate that a response has been sent.
+An email is automatically sent to the user who sent the original enquiry. This email includes the details of their original contact form submission and the response from the shop owner.
+
 ## Technologies
 
 ### Languages
