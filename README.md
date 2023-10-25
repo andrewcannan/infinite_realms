@@ -1017,6 +1017,35 @@ The Edit Products page serves the purpose of allowing users to make modification
 </details>
 <br><br>
 
+### Enquiries Page
+
+The purpose of the Enquiries page is to serve as a centralized hub for managing and responding to user inquiries or messages directed to the shop owner. The page is populated with only unresponded enquiries and is accessible exclusively by superusers.
+
+<details>
+<summary>Enquiries - Desktop</summary>
+<br>
+<img src="documentation/readme_images/edit-product-desktop.png">
+</details>
+<details>
+<summary>Enquiries - Mobile</summary>
+<br>
+<img src="documentation/readme_images/edit-product-mobile.png">
+</details>
+<br><br>
+
+**Enquiries Page Components**
+
+1. Table:
+The table displays the following columns:
+* User: Indicates the name of the user who sent the enquiry.
+* Date Enquiry Sent: Shows the date when the enquiry was submitted.
+* Email of User: Displays the email address of the user who sent the enquiry.
+* Reason for Contact: Specifies the category or reason for the user's contact.
+* Reply Button: Links to the Send Response page for addressing the enquiry.
+
+2. Responsive Design:
+Below 768px, the Date column is hidden to ensure the table remains fully visible on various screen sizes. When the screen size is reduced beyond a certain point, the table becomes horizontally scrollable to accommodate all information.
+
 ## Technologies
 
 ### Languages
