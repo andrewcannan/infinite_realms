@@ -76,7 +76,7 @@ def edit_review(request, review_id):
                        'Sorry, you need to be logged in to do that.')
         return redirect(reverse('account_login'))
 
-    original_review = Review.objects.get(id=review_id)
+    original_review = get_object_or_404(Review, id=review_id)
     product = original_review.product
     user = UserProfile.objects.get(user=request.user)
 
