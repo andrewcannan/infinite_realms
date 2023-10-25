@@ -27,9 +27,17 @@ This website was created as the 4th Milestone Project for Code Institute's web a
     * [Product Details Page](#product-details-page)
     * [Bag Page](#bag-page)
     * [Checkout Page](#checkout-page)
-    * [Checkout Success Page](#checkout-success)
+    * [Checkout Success Page](#checkout-success-page)
     * [Profile Page](#profile-page)
-    * [Contact Us Page](#contact-us)
+    * [Contact Us Page](#contact-us-page)
+    * [Add Review Page](#add-review-page)
+    * [Edit Review Page](#edit-review-page)
+    * [Add Product Page](#add-product-page)
+    * [Edit Product Page](#edit-product-page)
+    * [Enquiries Page](#enquiries-page)
+    * [Send Response Page](#send-response-page)
+    * [404 Error Page](#404-error-page)
+    * [500 Error Page](#500-error-page)
 * [Technologies](#technologies)
 * [Testing](#testing)
 * [Deployment](#deployment)
@@ -985,7 +993,7 @@ The Edit Review page serves the purpose of allowing users to make modifications 
 </details>
 <br><br>
 
-### Add Product
+### Add Product Page
 
  The Add Product page is an essential tool for maintaining and expanding the store's product catalog, allowing Shop Owner/Administrators to efficiently and accurately add new items for customers to explore and purchase. Access to this page is limited specifically to Superusers.
 
