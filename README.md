@@ -970,7 +970,7 @@ The Edit Review page serves the purpose of allowing users to make modifications 
 
  The Add Product page is an essential tool for maintaining and expanding the store's product catalog, allowing Shop Owner/Administrators to efficiently and accurately add new items for customers to explore and purchase. Access to this page is limited specifically to Superusers.
 
- <details>
+<details>
 <summary>Add Product - Desktop</summary>
 <br>
 <img src="documentation/readme_images/add-product-desktop.png">
@@ -998,6 +998,22 @@ Add Product Form:
 <summary>Category and Subcategory Dropdowns</summary>
 <br>
 <video src="documentation/readme_images/add-product-selects.webm" controls="controls"></video>
+</details>
+<br><br>
+
+### Edit Product Page
+
+The Edit Products page serves the purpose of allowing users to make modifications to an existing product. It shares a similar structure with the Add Product page, but the form is prepopulated with the current product data. Ability to edit products is limited to the Shop Owner/Administrator.
+
+<details>
+<summary>Edit Product - Desktop</summary>
+<br>
+<img src="documentation/readme_images/add-product-desktop.png">
+</details>
+<details>
+<summary>Edit Product - Mobile</summary>
+<br>
+<img src="documentation/readme_images/add-product-mobile.png">
 </details>
 <br><br>
 
