@@ -810,6 +810,77 @@ This button allows the shopper to return to the Products Page, giving them the o
 
 A confirmation email is automatically sent to the user's provided email address. The email includes a summary of the order.
 
+### Checkout Success
+
+The Profile Page serves as a hub for users to manage their default delivery information, review their order, reviews and enquiries history. It contributes to a seamless and personalized user experience.
+
+<details>
+<summary>Profile - Desktop</summary>
+<br>
+<img src="documentation/readme_images/checkout-success-desktop.png">
+</details>
+<details>
+<summary>Profile - Mobile</summary>
+<br>
+<img src="documentation/readme_images/checkout-success-mobile.png">
+</details>
+<br><br>
+
+1. Default Delivery Information Form:
+* Full Name
+* Street Address 1
+* Street Address 2
+* Town/City
+* County/Region
+* Country (Dropdown Selection)
+* Postal Code
+
+<details>
+<summary>Default Delivery Information</summary>
+<br>
+<img src="documentation/readme_images/checkout-success-mobile.png">
+</details>
+<br><br>
+
+2. Accordion Sections:
+* Order History:
+Displays past orders with the following details for each order:
+- Order Number (Link to Past Order Confirmation)
+- Date of Order
+- Items in Order
+- Order Total
+
+<details>
+<summary>Order History</summary>
+<br>
+<img src="documentation/readme_images/checkout-success-mobile.png">
+</details>
+<br><br>
+
+* Reviews Section:
+Lists all reviews made by the user, along with options for edit and delete actions.
+
+<details>
+<summary>Reviews</summary>
+<br>
+<img src="documentation/readme_images/checkout-success-mobile.png">
+</details>
+<br><br>
+
+* Messages Section:
+Displays contact form submissions made by the user, indicating whether a response has been sent or not.
+
+<details>
+<summary>Messages</summary>
+<br>
+<img src="documentation/readme_images/checkout-success-mobile.png">
+</details>
+<br><br>
+
+Upon loading the page, the "Order History" section of the accordion is automatically open, displaying the user's order history.
+
+Expanding another section automatically collapses the currently open section. This ensures that only one section of the accordion is open at a time, providing a clean and organized user interface.
+
 ## Technologies
 
 ### Languages
