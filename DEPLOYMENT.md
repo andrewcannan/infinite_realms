@@ -40,7 +40,7 @@ Infinite Realms is deployed on Heroku and utilizes AWS S3 for static file storag
 1. In the root directory of the project create a requirements.txt file containing project dependencies using:
 
 ```bash
-pip3 freeze > requirements.txt`
+pip3 freeze > requirements.txt
 ```
 <br><br>
 
