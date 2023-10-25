@@ -890,12 +890,12 @@ The purpose of the Contact Us page is to establish a direct and accessible commu
 <details>
 <summary>Contact Us- Desktop</summary>
 <br>
-<img src="documentation/readme_images/profile-messages.png">
+<img src="documentation/readme_images/contact-us-desktop.png">
 </details>
 <details>
 <summary>Contact Us - Mobile</summary>
 <br>
-<img src="documentation/readme_images/profile-messages.png">
+<img src="documentation/readme_images/contact-us-mobile.png">
 </details>
 <br><br>
 
@@ -916,14 +916,14 @@ A confirmation email is automatically sent to the user's provided email address.
 When the user clicks the Leave a Review button on the product details page, they are redirected to the Add Review page for that product. The Add Review page contributes to a dynamic and interactive shopping experience, empowering users to share their opinions and contribute to the collective knowledge about products available in the store.
 
 <details>
-<summary>Contact Us- Desktop</summary>
+<summary>Add Review- Desktop</summary>
 <br>
-<img src="documentation/readme_images/profile-messages.png">
+<img src="documentation/readme_images/add-review-desktop.png">
 </details>
 <details>
-<summary>Contact Us - Mobile</summary>
+<summary>Add Review - Mobile</summary>
 <br>
-<img src="documentation/readme_images/profile-messages.png">
+<img src="documentation/readme_images/add-review-mobile.png">
 </details>
 <br><br>
 
@@ -935,18 +935,18 @@ When the user clicks the Leave a Review button on the product details page, they
 * Rating Dropdown: Allows the user to select a rating from 0 to 5, indicating their overall satisfaction with the product.
 
 <details>
-<summary>Contact Us - Mobile</summary>
+<summary>Review Form</summary>
 <br>
-<img src="documentation/readme_images/profile-messages.png">
+<img src="documentation/readme_images/add-review-form.png">
 </details>
 <br><br>
 
 2. On desktop, an image of the product is available for reference while writing the review. Not available on mobile as it takes up to much screen real estate.
 
 <details>
-<summary>Contact Us - Mobile</summary>
+<summary>Desktop Image</summary>
 <br>
-<img src="documentation/readme_images/profile-messages.png">
+<img src="documentation/readme_images/add-review-image.png">
 </details>
 <br><br>
 
