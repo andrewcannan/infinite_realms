@@ -1024,12 +1024,12 @@ The purpose of the Enquiries page is to serve as a centralized hub for managing 
 <details>
 <summary>Enquiries - Desktop</summary>
 <br>
-<img src="documentation/readme_images/edit-product-desktop.png">
+<img src="documentation/readme_images/enquiries-desktop.png">
 </details>
 <details>
 <summary>Enquiries - Mobile</summary>
 <br>
-<img src="documentation/readme_images/edit-product-mobile.png">
+<img src="documentation/readme_images/enquiries-mobile.png">
 </details>
 <br><br>
 
