@@ -36,6 +36,7 @@ This website was created as the 4th Milestone Project for Code Institute's web a
     * [Edit Product Page](#edit-product-page)
     * [Enquiries Page](#enquiries-page)
     * [Send Response Page](#send-response-page)
+    * [Allauth Pages](#allauth-pages)
     * [404 Error Page](#404-error-page)
     * [500 Error Page](#500-error-page)
 * [Technologies](#technologies)
@@ -1106,6 +1107,20 @@ This section displays all the details of the original contact form submission, i
 3. Upon submission of the response form, the following actions occur:
 The response_sent field on the contact table in the database is updated to indicate that a response has been sent.
 An email is automatically sent to the user who sent the original enquiry. This email includes the details of their original contact form submission and the response from the shop owner.
+
+### Allauth Pages
+
+Site utilizes allauth for user account creation and authentication. Allauth is a powerful authentication framework for Django that streamlines the process of implementing user authentication and account management features in your web application. It offers a wide range of functionalities to handle user registration, login, email confirmation and password management.
+
+1. User Registration: allauth provides a robust mechanism for user registration. Users can sign up by providing essential information such as username, email, and password.
+
+2. Email Confirmation: After registration, allauth automatically sends a confirmation email to the user's provided email address. This ensures that the user's email is valid and accessible.
+
+3. Login and Logout: Users can securely log in to the application using their registered credentials. allauth also offers a user-friendly logout process.
+
+4. Password Management: Users can reset their password if they forget it, and allauth handles the entire password reset flow, including sending reset emails and updating the password.
+
+5. Integration with Django Admin: allauth seamlessly integrates with the Django admin interface, making it easy to manage user accounts and authentication settings.
 
 ### 404 Error Page
 
