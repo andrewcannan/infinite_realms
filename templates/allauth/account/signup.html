@@ -16,6 +16,39 @@
   <button class="btn-black mb-2" type="submit">{% trans "Sign Up" %} &raquo;</button>
 </form>
 
-<p class="text-black">{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+<p class="text-black">{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign
+    in</a>.{% endblocktrans %}</p>
 
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script>
+  $('#div_id_password1').prepend('<span class="password_icon_span1"><i class="fa-solid fa-eye"></i></span>');
+  $('#div_id_password2').prepend('<span class="password_icon_span2"><i class="fa-solid fa-eye"></i></span>');
+  $('.password_icon_span1').click(function () {
+        let passwordField = $('#id_password1');
+        let passwordIcon = $('.password_icon_span1 i');
+
+        if (passwordField.prop('type') === 'password') {
+            passwordField.prop('type', 'text');
+            passwordIcon.removeClass('fa-eye').addClass('fa-eye-slash');
+        } else {
+            passwordField.prop('type', 'password');
+            passwordIcon.removeClass('fa-eye-slash').addClass('fa-eye');
+        }
+    });
+    $('.password_icon_span2').click(function () {
+        let passwordField = $('#id_password2');
+        let passwordIcon = $('.password_icon_span2 i');
+
+        if (passwordField.prop('type') === 'password') {
+            passwordField.prop('type', 'text');
+            passwordIcon.removeClass('fa-eye').addClass('fa-eye-slash');
+        } else {
+            passwordField.prop('type', 'password');
+            passwordIcon.removeClass('fa-eye-slash').addClass('fa-eye');
+        }
+    });
+</script>
 {% endblock %}

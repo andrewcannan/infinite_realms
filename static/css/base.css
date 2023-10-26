@@ -133,6 +133,15 @@ main {
     border-radius: 0;
 }
 
+.password_icon_span,
+.password_icon_span_old,
+.password_icon_span1,
+.password_icon_span2 {
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+}
+
 .btn-file {
     position: relative;
     overflow: hidden;

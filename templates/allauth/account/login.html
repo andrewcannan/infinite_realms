@@ -14,8 +14,8 @@
 
 {% if socialaccount_providers %}
 <p>{% blocktrans with site.name as site_name %}Please sign in with one
-of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
-for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
+  of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
+  for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
 <div class="socialaccount_ballot">
 
@@ -31,7 +31,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
 {% else %}
 <p class="text-black">{% blocktrans %}If you have not created an account yet, then please
-<a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+  <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
 {% endif %}
 
 <form class="login text-black" method="POST" action="{% url 'account_login' %}">
@@ -46,4 +46,23 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
   </p>
 </form>
 
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script>
+  $('#div_id_password').prepend('<span class="password_icon_span"><i class="fa-solid fa-eye"></i></span>');
+  $('.password_icon_span').click(function () {
+    let passwordField = $('#id_password');
+    let passwordIcon = $('.password_icon_span i');
+
+    if (passwordField.prop('type') === 'password') {
+      passwordField.prop('type', 'text');
+      passwordIcon.removeClass('fa-eye').addClass('fa-eye-slash');
+    } else {
+      passwordField.prop('type', 'password');
+      passwordIcon.removeClass('fa-eye-slash').addClass('fa-eye');
+    }
+  });
+</script>
 {% endblock %}
