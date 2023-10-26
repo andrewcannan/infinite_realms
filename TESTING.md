@@ -194,6 +194,21 @@ JS files and scripts on templates run through [JShint](https://jshint.com/) for 
 <br>
 <img src="documentation/js_validation/quantity-input-script-js-validation.png">
 </details>
+<details>
+<summary>login.html</summary>
+<br>
+<img src="documentation/js_validation/password-reveal-login.png">
+</details>
+<details>
+<summary>password_change.html</summary>
+<br>
+<img src="documentation/js_validation/password-reveal-password-change.png">
+</details>
+<details>
+<summary>signup.html</summary>
+<br>
+<img src="documentation/js_validation/password-reveal-signup.png">
+</details>
 <br><br>
 
 ### Python Validation
