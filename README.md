@@ -313,7 +313,7 @@ Wireframes created using balsamiq.
 
 ### Database Schema
 
-Schema to show tables in database along with thier relation to each other, also included is the allauth-user schema to show custom tables realationship.
+Schema to show tables in database along with their relation to each other, also included is the allauth-user schema to show custom tables relationship.
 
 <img src="documentation/db_schema/db-schema.png">
 <br><br>
@@ -522,7 +522,7 @@ The Products Page dynamically showcases products sourced from the database, cont
 </details>
 <br><br>
 
-5. Product Cards: Each product is displayed in an individual card format. Cards are arranged in coloumn amounts suitable for screen size of the user. The card includes:
+5. Product Cards: Each product is displayed in an individual card format. Cards are arranged in column amounts suitable for screen size of the user. The card includes:
 
 * Product Image: Clickable and serves as a direct link to the product's detail page, providing users with a visual representation of the product.
 * Product Name: Clearly states the name of the product.
@@ -548,7 +548,7 @@ The Products Page dynamically showcases products sourced from the database, cont
 
 ### Product Details Page
 
- The Product Deatails Page plays a pivotal role in guiding users through their shopping journey, providing them with the information and tools they need to make informed purchasing decisions. It combines visual appeal with functional features to create an engaging and user-friendly shopping experience.
+ The Product Details Page plays a pivotal role in guiding users through their shopping journey, providing them with the information and tools they need to make informed purchasing decisions. It combines visual appeal with functional features to create an engaging and user-friendly shopping experience.
 
 <details>
 <summary>Product Details - Desktop</summary>
@@ -581,7 +581,7 @@ The Products Page dynamically showcases products sourced from the database, cont
 </details>
 <br><br>
 
-3. Quantity Input Box: Allows users to specify the quantity of the product they wish to add to their shopping bag, ensuring precise ordering. Users are unable to select a quantity outside of the range 1-99, this acheived by disabling the use of the decrement and increment buttons on the quantity input and by checking the validity of the form on submission.
+3. Quantity Input Box: Allows users to specify the quantity of the product they wish to add to their shopping bag, ensuring precise ordering. Users are unable to select a quantity outside of the range 1-99, this achieved by disabling the use of the decrement and increment buttons on the quantity input and by checking the validity of the form on submission.
 
 <details>
 <summary>Quantity Input Box</summary>
@@ -599,7 +599,7 @@ The Products Page dynamically showcases products sourced from the database, cont
 </details>
 <br><br>
 
-5. Reviews Section (Hidden by JS Click to Reveal): Conceals the reviews section by default, providing a cleaner interface. Users can choose to reveal the reviews by clicking on the heading, providing additional feedback and insights about the product. Revealing reviews section also enables the user to submit a review about the product by reavealing the "Leave a Review" Button. Ability to add reviews is limited to authenticated users.
+5. Reviews Section (Hidden by JS Click to Reveal): Conceals the reviews section by default, providing a cleaner interface. Users can choose to reveal the reviews by clicking on the heading, providing additional feedback and insights about the product. Revealing reviews section also enables the user to submit a review about the product by revealing the "Leave a Review" Button. Ability to add reviews is limited to authenticated users.
 
 <details>
 <summary>Reviews Section - Collapsed</summary>
@@ -613,7 +613,7 @@ The Products Page dynamically showcases products sourced from the database, cont
 </details>
 <br><br>
 
-6. Edit and Delete Links: Additional options available on product details page to shop owners or administrators. These links are located undernath the product name and allow for administrative actions to be performed on the product.
+6. Edit and Delete Links: Additional options available on product details page to shop owners or administrators. These links are located underneath the product name and allow for administrative actions to be performed on the product.
 
 <details>
 <summary>Edit and Delete Links</summary>
@@ -1179,7 +1179,7 @@ The 500 Error Page serves the purpose of handling and communicating 500 errors, 
 * AWS S3 - used to store images and static files.
 * Stripe - Used to process the payment information.
 * SQLite - Used for database for local development.
-* ElepehantSQL - Used to host the production database.
+* ElephantSQL - Used to host the production database.
 <br><br>
 
 ## Testing
@@ -1189,7 +1189,7 @@ For testing please see the [Testing](/TESTING.md) documentation.
 
 ## Deployment
 
-For deployment please see the [Testing](/DEPLOYMENT.md) documentation.
+For deployment please see the [Deployment](/DEPLOYMENT.md) documentation.
 <br><br>
 
 ## Credits
