@@ -66,13 +66,13 @@ pip3 freeze > requirements.txt
 
 ### Step 4: Connect Database to GitPod
 
-1. If using `env.py` file to store enviroment variables, add the following:
+1. If using `env.py` file to store environment variables, add the following:
 
 ```python
 os.environ.setdefault("DATABASE_URL", "the_copied_database_url")
 ```
 
-Alternatively, add as a GitPod enviroment variable if using GitPod.
+Alternatively, add as a GitPod environment variable if using GitPod.
 
 2. Install `dj-database-url` and `psycopg2`:
 
@@ -191,7 +191,7 @@ python3 manage.py createsuperuser
 
 2. Add this as a new Config Var on Heroku.
 
-3. Add the same variable to either your `env.py` file or GitPod enviroment variables.
+3. Add the same variable to either your `env.py` file or GitPod environment variables.
 
 4. Then, adjust the variable `SECRET_KEY` in `settings.py` to:
 
@@ -416,5 +416,5 @@ Workflow controlled using Git and GitHub. It helps you track different versions 
 You can think of a repository as a “main folder”, everything associated with a specific project should be kept in a repo for that project.
 You will have a local copy (on your computer) and an online copy (on GitHub) of all the files in the repository.
 
-Once Changes on your local copy have been saved they can be added to the staging area using ```Git -add```. And then commited using ```Git commit``` along with your message, meaning they will be saved as a version of the repository which is then ready to be pushed, using ```Git push```, up to the online copy of your repository.
+Once Changes on your local copy have been saved they can be added to the staging area using ```Git -add```. And then committed using ```Git commit``` along with your message, meaning they will be saved as a version of the repository which is then ready to be pushed, using ```Git push```, up to the online copy of your repository.
 <br><br>
